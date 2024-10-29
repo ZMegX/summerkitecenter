@@ -1,0 +1,206 @@
+* { box-sizing: border-box; }
+body { background-color: #3D5E73; 
+       font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+      background-color: #FFFF;
+		   color: #330000;
+		   box-shadow: 5px 5px 5px #000000;
+}
+header {
+    padding-top: 6em; /* Add top padding to avoid overlap with navbar */
+}
+	 
+h1 {  
+    font-family: Georgia, "Times New Roman", serif;
+	text-shadow: 3px 3px 3px #F2CB05;
+    margin-top: .25em;
+	display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate; 
+}
+nav { margin: 0;  border-bottom: 1px solid #000000;}
+nav ul { 
+  list-style-type: none; 
+  margin: 0;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	flex-wrap: nowrap;
+  background-color: #000000;
+	   
+	 }
+nav li { margin-top: 0; margin-bottom: 0;
+       font-weight: bold;
+	   display: flex;
+       padding: 0,75em;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #ffffff; }
+nav a:visited{ color: #F2CF8D; }
+nav a:hover { 
+    border: solid #F2CB05;
+    color: #F2CB05; }
+
+
+main { background-color: #FFFF;
+      padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+		  display: block;
+}
+main img { float: right;
+         width: 60%;
+		 height: auto;
+         padding: 1em;
+}
+#img2 {
+    float: left;
+    margin-right: 10px; /* Optional: adds space between the image and text */
+  }
+  .a-button{
+    display: flex;
+    flex-direction: row;}
+
+footer { background-color: #FFFF;
+         text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+@media (min-width: 320px) {
+  .navbar {
+    position: fixed; /* Make it stay in one place */
+    top: 0; /* Align it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for spacing */
+    text-align: center; /* Center the text */
+    z-index: 1000; /* Ensure it’s above other content */
+}
+.content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column; /* Add top padding to avoid overlap with navbar */
+}
+.a-button{
+  display: flex;
+  flex-direction: row;}
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;}
+
+  nav, main, footer {
+      grid-column: 1;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  h1 {
+      font-size: 2em;
+      padding-left: 0;
+  }
+
+  h3 {
+      border: solid black;
+  }
+
+  main img {
+      width: 50%;
+      height: auto;
+  }
+}
+@media (min-width: 700px) {
+  nav { margin: 0;  border-bottom: 1px solid #F4E8BC;}
+  nav a { text-decoration: none;
+    padding: 1em;
+font-weight: bold;
+}
+  nav  ul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;}
+  nav li { margin-top: 0; margin-bottom: 0;
+       font-weight: bold;
+	   display: inline;
+       padding: .25em;}
+   #wrapper 
+   { width: 80%;
+     margin: auto;
+	   display: grid;
+		 grid-template-rows: 130px auto;
+		 grid-template-columns: 250px auto;}
+  aside{
+    grid-column: 2/4;
+    grid-row: 4/5;}
+  header { 
+    grid-row: 1 / 2; 
+    grid-column: 1 / 7;}
+  main { 
+    display: flex;
+    flex-direction: column;
+    grid-row: 7 / 7; 
+    grid-column: 1 / 5; }
+  footer { 
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    grid-row: 8/8 ; 
+    grid-column: 1 / 3; 
+  }
+  h1 { 
+    display: flex;
+    font-size: 3em;}
+  h3{
+    display: flex;
+    flex-direction: row;
+    grid-row: 5 / 6; 
+    grid-column: 2 / 3;
+  }
+  main img { 
+    width: 200px; height: auto;}  
+  }
+@media (min-width: 1024px) {
+  .navbar {
+    position: fixed; /* Make it stay in one place */
+    top: 0; /* Align it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for spacing */
+    text-align: center; /* Center the text */
+    z-index: 1000;} /* Ensure it’s above other content */
+  .content {
+    display: flex;
+    flex-direction: column;}/* Add top padding to avoid overlap with navbar */
+  #wrapper { width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 130px auto;
+    grid-template-columns: 200px auto;}
+  header { 
+    grid-row: 1 / 2; 
+    grid-column: 1 / 4; }
+  nav { grid-row: 1 / 4; grid-column: 1 / 3; }
+  main { grid-row: 3 / 4; grid-column: 1 / 3; }
+  footer { grid-row: 7 / 8; grid-column: 1 / 3; }
+  nav  ul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  }
+  h1 { 
+    font-size: 3em; padding-left: 80px;}
+  main img { 
+    width: 450px; height: auto;}
+  }	  
