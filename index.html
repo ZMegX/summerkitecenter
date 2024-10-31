@@ -1,76 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Summer Kite Center</title>
-<meta charset="utf-8">
-<link href="stylesheet.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="stylesheetgrid.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<div id="wrapper">
-        <header>
-            <h1>Summer Kite Center</h1>
-        </header>
+    <header>
+            <h1>Summer Kite Center School</h1>
+    </header>
         <div class="navbar">
-        <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-        <li><a href="calendar/book.html">Book</a></li>
-        <li><a href="kitesurfschool/teacher.html">Teachers</a></li>
-        <li><a href="kitesurfschool/spot.html">KiteSurf Spot</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </nav>
-        </div>
-        <div class="content">
-              <main>
-                  <h2>The Best Spot In Zanzibar</h2>
-                      <img src="images/Kitesurfing-spot-h250.png" 
-                      alt="Photo of a white sand beach, it's the summer kite spot, 
-                      in Paje, Zanzibar"></div>
-              <img src="images/text-animation1-150px.gif" 
-                alt="Photo of a white sand beach, it's the summer kite spot, 
-                in Paje, Zanzibar" ><br><br></div>
-              <h2>Summer Kite Center</h2>
-                <img src="images/animatedtext2-star-rating.gif" 
-                alt="5 star reviews" width="50px" ><br>
-                <a href="kitesurfschool/reviews">9.5 - Based on 1365 reviews</a>
-                <p>KiteSurf Spot</p>
-              <p>On the southeast coast of Zanzibar, Paje is a breathtaking 
-                beach with fluffy white sand, blue waves, and ideal 
-                kite-surfing conditions. The beach provides a perfect location 
-                for both novice and experienced kitesurfers with regular trade 
-                winds that blow almost exactly parallel along the coast. Safe practice 
-                is made possible by the large, shallow lagoon; the wind direction guarantees
-                regular rides over clean, warm waves. 
-                For kitesurfers all around, Paje is a sought-after location because of
-                its mix of pure beauty and outstanding wind conditions. </p>
-              <img id="img2" src="images/teacher-photo.jpg" 
-                alt="Teacher from the Summer 
-                    Kite Center School in Paje." >
-              <h3>Teachers</h3>
-              <p>Kite Summer Center in Paje, 
-                Zanzibar, has a skilled and enthusiastic 
-                kitesurfing team which enjoys training. 
-                They offer customised education for beginners 
-                to intermediate riders that put first safety, fun, 
-                and speedy growth in a professional yet pleasant approach.
-                Their expertise in local winds and waves and helpful teaching 
-                style make kitesurfing on Paje's
-                world-class beach unforgettable.</p>
-              <div class="a-button">
-                <ul>
-                <li><a href="kitesurfschool/spot.html">KiteSurf Spot</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <!-- Hamburger icon bars -->
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
               </div>
+            <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+            <li><a href="calendar/book.html">Book</a></li>
+            <li><a href="kitesurfschool/teacher.html">Teachers</a></li>
+            <li><a href="kitesurfschool/spot.html">KiteSurf Spot</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            <script>
+                function toggleMenu() {
+                  document.querySelector('.nav-links').classList.toggle('active');
+                }
+              </script>
+            </div>
+    </div>
+    <div class="box e"><img src="images/logo-round.png" 
+      alt="logo-round" height="50px"></div>
+    <!-- <div class="box f">F</div> -->
+  </div>
+  
 
-
-                </div>
-              </main>
-
-        <footer>
-        Copyright &copy; 2024 Summer Kite Center
-        </footer>
-</div>
+<div class="wrapper2">
+    <div class="box a2">A</div>
+    <div class="box b2">B</div>
+    <div class="box c2">C</div>
+    <div class="box d2">D</div>
+  </div>
+  
+  
+  
+  
 </body>
 </html>
