@@ -5,6 +5,30 @@
     <link href="stylesheetgrid.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+.box-content:1,
+.box-content:2,
+.box-content:3,
+.box-content:4,
+.box-content:5,
+.box-content:6 {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+.wrapper-spot {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  border: 2px dashed;
+  grid-template-columns: repeat(2, grid-auto-flow);
+  grid-template-rows: auto 100px 100px;
+  grid-auto-flow: column;
+}
+    </style>
 </head>
 <body>
     <body>
@@ -34,5 +58,33 @@
               </script>
             </div>
             
+
+<div class="wrapper-spot">
+  <div class="box-content-1">1</div>
+  <div class="box-content-2"> <img src="images/text-animation1-150px.gif" 
+    alt="Photo of a white sand beach, it's the summer kite spot, 
+    in Paje, Zanzibar" ></div>
+  <div class="box-content-3"><h1>KiteSurf Spot</h1>
+    <p>On the southeast coast of Zanzibar, Paje is a breathtaking 
+      beach with fluffy white sand, blue waves, and ideal 
+      kite-surfing conditions. The beach provides a perfect location 
+      for both novice and experienced kitesurfers with regular trade 
+      winds that blow almost exactly parallel along the coast. Safe practice 
+      is made possible by the large, shallow lagoon; the wind direction guarantees
+      regular rides over clean, warm waves. 
+      For kitesurfers all around, Paje is a sought-after location because of
+      its mix of pure beauty and outstanding wind conditions. </p></div>
+  <div class="box-content-4">                      <img src="images/Kitesurfing-spot-h250.png" 
+    alt="Photo of a white sand beach, it's the summer kite spot, 
+    in Paje, Zanzibar"></div>
+  <div class="box-content-5"><img src="images/text-animation1-150px.gif" 
+    alt="Photo of a white sand beach, it's the summer kite spot, 
+    in Paje, Zanzibar" ></div>
+  <div class="box-content-6"><img src="images/text-animation1-150px.gif" 
+    alt="Photo of a white sand beach, it's the summer kite spot, 
+    in Paje, Zanzibar" >6</div>
+</div>
+
+
 </body>
 </html>
