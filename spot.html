@@ -15,32 +15,55 @@ h1 {
 p{
   font-family: "new-zen", sans-serif;
 font-weight: 300;
-font-style: normal;
+font-style: normal;}
+
+
+body {
+  margin: 40px;
 }
 
-.box-content:1,
-.box-content:2,
-.box-content:3,
-.box-content:4,
-.box-content:5,
-.box-content:6 {
+.sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 60% ;
+    grid-template-areas:
+    "....... header header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+  }
+
+
+.box {
+  background-color: #444;
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   font-size: 150%;
 }
 
-
-.wrapper-spot {
-  width: 600px;
-  display: grid;
-  grid-gap: 10px;
-  border: 2px dashed;
-  grid-template-columns: repeat(2, grid-auto-flow);
-  grid-template-rows: auto 100px 100px;
-  grid-auto-flow: column;
+.header,
+.footer {
+  background-color: #999;
 }
-
     </style>
 </head>
 <body>
@@ -71,34 +94,55 @@ font-style: normal;
               </script>
             </div>
             
-            <span class="sidebar-spot">
+            <span class="sidebar-main">
+              <div class="wrapper">
+                  <div class="box header">Paje Beach Kitesurfing Paradise</div>
+                  <div class="box sidebar">    
+                    <h2>🌴 Paje Beach Overview </h2>
+                    <h2>🪁 Kitesurfing Paradise </h2>
+                    <h2>☀️ Relax & Unwind</h2>
+                    <h2>🍽️ Food & Dining</h2>
+                    <h2>🤝 Friendly Community & Nightlife </h2>
+                    <h2>🌊 Nature & Adventure </h2>
 
-<div class="wrapper-spot">
-  <div class="box-content-1">1</div>
-  <div class="box-content-2"> <img src="images/text-animation1-150px.gif" 
-    alt="Photo of a white sand beach, it's the summer kite spot, 
-    in Paje, Zanzibar" ></div>
-  <div class="box-content-3"><h1>KiteSurf Spot</h1>
-    <p>On the southeast coast of Zanzibar, Paje is a breathtaking 
-      beach with fluffy white sand, blue waves, and ideal 
-      kite-surfing conditions. The beach provides a perfect location 
-      for both novice and experienced kitesurfers with regular trade 
-      winds that blow almost exactly parallel along the coast. Safe practice 
-      is made possible by the large, shallow lagoon; the wind direction guarantees
-      regular rides over clean, warm waves. 
-      For kitesurfers all around, Paje is a sought-after location because of
-      its mix of pure beauty and outstanding wind conditions. </p></div>
-  <div class="box-content-4">                      <img src="images/Kitesurfing-spot-h250.png" 
-    alt="Photo of a white sand beach, it's the summer kite spot, 
-    in Paje, Zanzibar"></div>
-  <div class="box-content-5"><img src="images/text-animation1-150px.gif" 
-    alt="Photo of a white sand beach, it's the summer kite spot, 
-    in Paje, Zanzibar" ></div>
-  <div class="box-content-6"><img src="images/text-animation1-150px.gif" 
-    alt="Photo of a white sand beach, it's the summer kite spot, 
-    in Paje, Zanzibar" >6</div>
-</div>
-</span>
+                  </div>
+                  <div class="box content">
+             
+                  Location: Southeastern coast of Zanzibar<br>
+                  Vibe: Laid-back, scenic, vibrant mix of relaxation and activity<br>
+                  Main Attractions: Kitesurfing, relaxing beach spots, diverse food, friendly community<br>
+              
+              
+                  Ideal Conditions: Consistent trade winds, shallow lagoon, spacious beach<br>
+                  Skill Levels: Beginner to advanced, with several kite schools available<br>
+                  Equipment & Lessons: Rental and lessons offered at many beach spots<br>
+              
+              
+                  Atmosphere: Relaxed with beach bars, hammocks, and bean bags<br>
+                  Drinks: Fresh coconut water, cocktails, and smoothies<br>
+                  Scenic Views: Palm trees, turquoise waters, and powdery white sand<br>
+              
+              
+              
+                  Cuisine Variety: Swahili flavors, fresh seafood, tropical fruits, and spices
+                  Dining Options: Range from cozy cafes to lively beach bars
+                  Must-Try Dishes: Fresh seafood, tropical fruits, dishes infused with local spices<br>
+              
+              
+              
+                  People: Welcoming locals and friendly travelers
+                  Nightlife: Beach parties, bonfires, and social gatherings
+                  Social Atmosphere: Great spot to meet people from around the world<br>
+              
+              
+              
+                  Low Tide Exploration: Sandbars and shallow pools appear at low tide
+                  Marine Life: Discover unique tidal pools and local marine species close to shore
+                  Perfect Blend: Ideal for both adventure and relaxation
+                    <br /> More content than we had before so this column is now quite tall.</div>
+                  <div class="box footer">Footer</div>
+                </div>
+              </span>
 
 </body>
 </html>
