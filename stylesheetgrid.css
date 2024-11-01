@@ -41,11 +41,13 @@ h1 {
       transition: 0.3s;
     }
     .sidebar-main{
-      
       .content {
         grid-area: content;
       }
   .header {
+    font-family: "new-zen", sans-serif;
+font-weight: 500;
+font-style: normal;
         grid-area: header;
       }  
   .footer {
@@ -62,12 +64,16 @@ h1 {
         background-color: #fff;
         border: 2px dashed;
       }
-  .box {
+.box {
+    font-family: "new-zen", sans-serif;
+    font-weight: 100;
+    font-style: normal;
       background-color: #444;
       color: #fff;
       border-radius: 5px;
       padding: 10px;
       font-size: 150%;
+
     }
     .header,
   .footer {
