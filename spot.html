@@ -7,11 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-h1 { 
-  font-family: "new-zen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #000000;}
+
+ nav { margin: 0;  border-bottom: 1px solid #000000;}
+  nav ul { 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #271719;}
+  nav li { margin-top: 0; margin-bottom: 0;
+    font-family: "new-zen", sans-serif;
+    font-weight: 500;
+    font-style: normal;     display: flex;
+      list-style: none;}
+  nav a { text-decoration: none;
+          font-size: 1rem; }
+  nav a:link { 
+      display: flex;
+      gap: 1rem;
+      color: white; }
+  nav a:visited{ color: #F2CF8D; }
+  nav a:hover { 
+     color: #e8c42a; }  
+  .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+  .menu-icon {
+      display: none; /* Hide hamburger icon on larger screens */
+      cursor: pointer;
+      flex-direction: column;
+      gap: 4px;
+    }
+    
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #271719;
+      transition: 0.3s;
+    }
+   
+@media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide nav links initially */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+    }
+.nav-links.active {
+      display: flex; /* Show nav links when active */
+    }  
+.menu-icon {
+      display: flex; /* Show hamburger icon on smaller screens */
+    }
+  }
+
 p{
   font-family: "new-zen", sans-serif;
 font-weight: 300;
@@ -24,6 +79,7 @@ body {
 
 .sidebar {
     grid-area: sidebar;
+    background-color: #271719;
   }
 
   .content {
@@ -42,32 +98,63 @@ body {
   .wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto 60% ;
+    grid-template-columns: 300px 60%  ;
     grid-template-areas:
     "....... header header"
     "sidebar content content"
     "footer  footer  footer";
     background-color: #fff;
-    color: #444;
+    color: #b2b412;
   }
 
 
 .box {
-  background-color: #444;
+  background-color: #090909;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
+  font-family: "circe", sans-serif;
+font-weight: 100;
+font-style: normal;
 }
 
 .header,
 .footer {
-  background-color: #999;
+  background-color: #754343;
+  font-family: "new-zen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;}
+/* Style the tab links */
+.tab-links a {
+  padding: 10px 20px;
+  margin-right: -1px;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+/* Highlight the active tab link using :target */
+.tab-links a:target {
+  background-color: #ccc;
+}
+
+/* Hide all content by default */
+.content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Show content when targeted */
+.tab-content :target {
+  display: block;
 }
     </style>
 </head>
 <body>
-    <body>
         <header>
             <h1>Summer Kite Center School</h1>
         </header>
@@ -93,56 +180,32 @@ body {
                 }
               </script>
             </div>
+            <div class="tab-links">
+              <a href="#tab1">🌴 Paje Beach Overview</a>
+              <a href="#tab2">🪁 Kitesurfing Paradise </a>
+              <a href="#tab3">☀️ Relax & Unwind</a>
+            </div>
             
-            <span class="sidebar-main">
-              <div class="wrapper">
-                  <div class="box header">Paje Beach Kitesurfing Paradise</div>
-                  <div class="box sidebar">    
-                    <h2>🌴 Paje Beach Overview </h2>
-                    <h2>🪁 Kitesurfing Paradise </h2>
-                    <h2>☀️ Relax & Unwind</h2>
-                    <h2>🍽️ Food & Dining</h2>
-                    <h2>🤝 Friendly Community & Nightlife </h2>
-                    <h2>🌊 Nature & Adventure </h2>
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div id="tab1" class="content">
+                <h3>Location: Southeastern coast of Zanzibar</h3>
+                <p>Vibe: Laid-back, scenic, vibrant mix of relaxation and activity<br>
+                  Main Attractions: Kitesurfing, relaxing beach spots, diverse food, friendly community</p>
+              </div>
+              <div id="tab2" class="content">
+                <h3>Best Kitesurf spot in Zanzibar</h3>
+                <p>Ideal Conditions: Consistent trade winds, shallow lagoon, spacious beach
+                  Skill Levels: Beginner to advanced, with several kite schools available.
+                  Equipment & Lessons: Rental and lessons offered at many beach spots</p>
+              </div>
+              <div id="tab3" class="content">
+                <h3>Hakuna Mata and Pole Pole</h3>
+                <p>Relax at beach bars, on a hammock, or bean bags while enjoying the view.
+                  Drinks: Fresh coconut water, cocktails, and smoothies.
+                  Scenic Views: Palm trees, turquoise waters, and powdery white sand</p>
+              </div>
+            </div>
 
-                  </div>
-                  <div class="box content">
-             
-                  Location: Southeastern coast of Zanzibar<br>
-                  Vibe: Laid-back, scenic, vibrant mix of relaxation and activity<br>
-                  Main Attractions: Kitesurfing, relaxing beach spots, diverse food, friendly community<br>
-              
-              
-                  Ideal Conditions: Consistent trade winds, shallow lagoon, spacious beach<br>
-                  Skill Levels: Beginner to advanced, with several kite schools available<br>
-                  Equipment & Lessons: Rental and lessons offered at many beach spots<br>
-              
-              
-                  Atmosphere: Relaxed with beach bars, hammocks, and bean bags<br>
-                  Drinks: Fresh coconut water, cocktails, and smoothies<br>
-                  Scenic Views: Palm trees, turquoise waters, and powdery white sand<br>
-              
-              
-              
-                  Cuisine Variety: Swahili flavors, fresh seafood, tropical fruits, and spices
-                  Dining Options: Range from cozy cafes to lively beach bars
-                  Must-Try Dishes: Fresh seafood, tropical fruits, dishes infused with local spices<br>
-              
-              
-              
-                  People: Welcoming locals and friendly travelers
-                  Nightlife: Beach parties, bonfires, and social gatherings
-                  Social Atmosphere: Great spot to meet people from around the world<br>
-              
-              
-              
-                  Low Tide Exploration: Sandbars and shallow pools appear at low tide
-                  Marine Life: Discover unique tidal pools and local marine species close to shore
-                  Perfect Blend: Ideal for both adventure and relaxation
-                    <br /> More content than we had before so this column is now quite tall.</div>
-                  <div class="box footer">Footer</div>
-                </div>
-              </span>
-
-</body>
+    </body>
 </html>
