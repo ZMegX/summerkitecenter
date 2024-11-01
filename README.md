@@ -10,6 +10,9 @@ https://gridbyexample.com/
 CSS font generator
 https://webdesign-assistant.com/font-editor/css-font-generator.php
 
+font from
+https://fonts.adobe.com/fonts/zen-new
+
 ##Sitemap
     Visual diagram
     
