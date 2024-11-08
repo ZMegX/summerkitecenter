@@ -2,7 +2,10 @@
 * {
   box-sizing: border-box;
 }
-
+.transparent {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
 body {
   background-color: #3D5E73;
   font-family: Verdana, Arial, sans-serif;

@@ -11,6 +11,7 @@
   <header>
     <h1>Summer Kite Center School</h1>
 </header>
+<div class="transparent">
 <div class="navbar">
     <div class="menu-icon" onclick="toggleMenu()">
         <!-- Hamburger icon bars -->
@@ -33,42 +34,36 @@
         }
     </script>
 </div>
-<span class="sidebar-main">
+</div>
 <div class="wrapper">
-    <div class="box header">Paje Beach Kitesurfing Paradise</div>
-    <div class="box sidebar">Sidebar</div>
+    <div class="box header">
+        Paje Beach Kitesurfing Paradise
+      </div>
     <div class="box content">
        <h2>🌴 Paje Beach Overview </h2>
-
-    Location: Southeastern coast of Zanzibar
+       <em>Location: Southeastern coast of Zanzibar</em>
     Vibe: Laid-back, scenic, vibrant mix of relaxation and activity
     Main Attractions: Kitesurfing, relaxing beach spots, diverse food, friendly community
 
       <h2>🪁 Kitesurfing Paradise </h2>
 
-    Ideal Conditions: Consistent trade winds, shallow lagoon, spacious beach
-    Skill Levels: Beginner to advanced, with several kite schools available
-    Equipment & Lessons: Rental and lessons offered at many beach spots
-
-      <h2>☀️ Relax & Unwind</h2>
-
-    Atmosphere: Relaxed with beach bars, hammocks, and bean bags
-    Drinks: Fresh coconut water, cocktails, and smoothies
-    Scenic Views: Palm trees, turquoise waters, and powdery white sand
-
-      <h2>🍽️ Food & Dining</h2>
-
-
-    Cuisine Variety: Swahili flavors, fresh seafood, tropical fruits, and spices
-    Dining Options: Range from cozy cafes to lively beach bars
-    Must-Try Dishes: Fresh seafood, tropical fruits, dishes infused with local spices
-
- <h2>🤝 Friendly Community & Nightlife </h2>
-
-
-    People: Welcoming locals and friendly travelers
-    Nightlife: Beach parties, bonfires, and social gatherings
-    Social Atmosphere: Great spot to meet people from around the world
+    <em>Ideal Conditions:</em> Consistent trade winds, shallow lagoon, spacious beach
+    <em>Skill Levels:</em> Beginner to advanced,
+                          with several kite schools available.
+    <em>Equipment & Lessons:</em>
+    Rental and lessons offered at many beach spots
+    <h2>☀️ Relax & Unwind</h2>
+    <em>Atmosphere:</em> Relaxed with beach bars, hammocks, and bean bags
+    <em>Drinks:</em> Fresh coconut water, cocktails, and smoothies
+    <em>Scenic Views:</em> Palm trees, turquoise waters, and powdery white sand
+    <h2>🍽️ Food & Dining</h2>
+    <em>Cuisine Variety:</em> Swahili flavors, fresh seafood, tropical fruits, and spices from <span id="zanzibar">Zanzibar</span>
+    <em>Dining Options:</em> Range from cozy cafes to lively beach bars.
+    <em>Must-Try Dishes:</em> Fresh seafood, tropical fruits, dishes infused with local spices.
+    <h2>🤝 Friendly Community & Nightlife </h2>
+    <em>People:</em> Welcoming locals and friendly travelers
+    <em>Nightlife:</em> Beach parties, bonfires, and social gatherings
+    <em>Social Atmosphere:</em> Great spot to meet people from around the world
 
 <h2>🌊 Nature & Adventure </h2>
 
@@ -80,172 +75,7 @@
     <div class="box footer">Footer</div>
   </div>
 </span>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="stylesheetgrid.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/yty2ajt.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
 
- nav { margin: 0;  border-bottom: 1px solid #000000;}
-  nav ul { 
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     background-color: #271719;}
-  nav li { margin-top: 0; margin-bottom: 0;
-    font-family: "new-zen", sans-serif;
-    font-weight: 500;
-    font-style: normal;     display: flex;
-      list-style: none;}
-  nav a { text-decoration: none;
-          font-size: 1rem; }
-  nav a:link { 
-      display: flex;
-      gap: 1rem;
-      color: white; }
-  nav a:visited{ color: #F2CF8D; }
-  nav a:hover { 
-     color: #e8c42a; }  
-  .nav-links {
-      display: flex;
-      gap: 1rem;
-    }
-  .menu-icon {
-      display: none; /* Hide hamburger icon on larger screens */
-      cursor: pointer;
-      flex-direction: column;
-      gap: 4px;
-    }
-    
-    .bar {
-      width: 25px;
-      height: 3px;
-      background-color: #271719;
-      transition: 0.3s;
-    }
-   
-@media (max-width: 768px) {
-    .nav-links {
-      display: none; /* Hide nav links initially */
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      gap: 1rem;
-    }
-.nav-links.active {
-      display: flex; /* Show nav links when active */
-    }  
-.menu-icon {
-      display: flex; /* Show hamburger icon on smaller screens */
-    }
-  }
-
-p{
-  font-family: "new-zen", sans-serif;
-font-weight: 300;
-font-style: normal;}
-
-
-body {
-  margin: 40px;
-}
-/* Style the tab links */
-.tab-links a {
-  padding: 10px 20px;
-  margin-right: -1px;
-  background-color: #f1f1f1;
-  text-decoration: none;
-  border: 1px solid #ddd;
-  color: #333;
-}
-
-/* Highlight the active tab link using :target */
-.tab-links a:target {
-  background-color: #ccc;
-}
-
-/* Hide all content by default */
-.content {
-  display: none;
-  padding: 20px;
-  border: 1px solid #ddd;
-}
-
-/* Show content when targeted */
-.tab-content :target {
-  display: block;
-}
-    </style>
-</head>
-<body>
-        <header>
-            <h1>Summer Kite Center School</h1>
-        </header>
-        <div class="navbar">
-            <div class="menu-icon" onclick="toggleMenu()">
-                <!-- Hamburger icon bars -->
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-            <nav>
-            <ul class="nav-links">
-              <li><a href="./main.html">Home</a></li>
-            <li><a href="./book.html">Book</a></li>
-            <li><a href="kitesurfschool/teacher.html">Teachers</a></li>
-            <li><a href="kitesurfschool/spot.html">KiteSurf Spot</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            </ul>
-            </nav>
-            <script>
-                function toggleMenu() {
-                  document.querySelector('.nav-links').classList.toggle('active');
-                }
-              </script>
-            </div>
-            <div class="tab-links">
-              <a href="#tab1">🌴 Paje Beach Overview</a>
-              <a href="#tab2">🪁 Kitesurfing Paradise </a>
-              <a href="#tab3">☀️ Relax & Unwind</a>
-            </div>
-            
-            <!-- Tab Content -->
-            <div class="tab-content">
-              <div id="tab1" class="content">
-                <h3>Location: Southeastern coast of Zanzibar</h3>
-                <p>Vibe: Laid-back, scenic, vibrant mix of relaxation and activity<br>
-                  Main Attractions: Kitesurfing, relaxing beach spots, diverse food, friendly community</p>
-                  <img src="images/Kitesurfing-spot-h250.png" 
-                  alt="Photo of a white sand beach, it's the summer kite spot, 
-                  in Paje, Zanzibar"></div>
-              </div>
-              <div id="tab2" class="content">
-                <h3>Best Kitesurf spot in Zanzibar</h3>
-                <p>Ideal Conditions: Consistent trade winds, shallow lagoon, spacious beach
-                  Skill Levels: Beginner to advanced, with several kite schools available.
-                  Equipment & Lessons: Rental and lessons offered at many beach spots</p>
-                  <img src="./images/kitesurfingparadise.jpg" 
-                  alt="Photo of a white sand beach, it's the summer kite spot, 
-                  in Paje, Zanzibar">
-              </div>
-              <div id="tab3" class="content">
-                <h3>Hakuna Mata and Pole Pole</h3>
-                <p>Relax at beach bars, on a hammock, or bean bags while enjoying the view.
-                  Drinks: Fresh coconut water, cocktails, and smoothies.
-                  Scenic Views: Palm trees, turquoise waters, and powdery white sand</p>
-              </div>
-            </div>
-
-    </body>
 </html>
 </body>
 </html>
