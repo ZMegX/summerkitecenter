@@ -1,27 +1,14 @@
-/* Global Styles */
 * {
   box-sizing: border-box;
 }
-.transparent {
-  zoom: 1;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
 body {
-  background-color: #3D5E73;
+  background-color: #49a6df;
   font-family: Verdana, Arial, sans-serif;
   margin: 40px;
 }
-
-#wrapper {
-  background-color: #FFFF;
-  color: #330000;
-  box-shadow: 5px 5px 5px #000000;
-}
-
 header {
   padding-top: 6em; /* Add top padding to avoid overlap with navbar */
 }
-
 h1 {
   font-family: Georgia, "Times New Roman", serif;
   text-shadow: 3px 3px 3px #F2CB05;
@@ -31,19 +18,21 @@ h1 {
   font-weight: bold;
   unicode-bidi: isolate;
 }
-
 nav {
   margin: 0;
   border-bottom: 1px solid #000000;
 }
-
+.transparent {
+  zoom: 1;
+  filter: alpha(opacity=80);
+  opacity: 0.5;
+}
 nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #271719;
 }
-
 nav li {
   margin: 0;
   font-family: "new-zen", sans-serif;
@@ -52,52 +41,43 @@ nav li {
   display: flex;
   list-style: none;
 }
-
 nav a {
   text-decoration: none;
   font-size: 1rem;
 }
-
 nav a:link {
   display: flex;
   gap: 1rem;
   color: white;
 }
-
 nav a:visited {
   color: #F2CF8D;
 }
-
 nav a:hover {
   color: #e8c42a;
 }
-
 .nav-links {
   display: flex;
   gap: 1rem;
 }
-
 .menu-icon {
   display: none; /* Hide hamburger icon on larger screens */
   cursor: pointer;
   flex-direction: column;
   gap: 4px;
 }
-
 .bar {
   width: 25px;
   height: 3px;
   background-color: #271719;
   transition: 0.3s;
 }
-
 p {
   font-family: "new-zen", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-
-/* Tab Links */
+/* Tab Links Spot.html*/
 .tab-links a {
   padding: 10px 20px;
   margin-right: -1px;
@@ -106,53 +86,20 @@ p {
   border: 1px solid #ddd;
   color: #333;
 }
-
 .tab-links a:target {
   background-color: #ccc;
 }
-
 /* Content Display */
 .content {
   display: none;
   padding: 20px;
   border: 1px solid #ddd;
 }
-
 .tab-content :target {
   display: block;
 }
-
-footer {
-  background-color: #FFFF;
-  text-align: center;
-  font-size: small;
-  font-style: italic;
-}
-
 /* Responsive Styles */
-@media (max-width: 420px) {
-  .nav-links {
-      display: none; /* Hide nav links initially */
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      gap: 1rem;
-  }
-
-  .nav-links.active {
-      display: flex; /* Show nav links when active */
-  }
-
-  .menu-icon {
-      display: flex; /* Show hamburger icon on smaller screens */
-  }
-}
-
+/* Position nav bar fixed here */
 @media (min-width: 320px) {
   .navbar {
       position: fixed;
@@ -165,58 +112,45 @@ footer {
       text-align: center;
       z-index: 1000;
   }
-
   .content {
       padding-top: 10px;
       display: flex;
       flex-direction: column;
   }
-
   #wrapper {
       display: grid;
       grid-template-columns: 1fr;
       gap: 15px;
   }
-
   nav, main, footer {
       grid-column: 1;
   }
 }
-
-@media (min-width: 700px) {
-  nav {
-      margin: 0;
-      border-bottom: 1px solid #F4E8BC;
+@media only screen and (max-width: 767px) {
+  .nav-links {
+      display: none; /* Hide nav links initially */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
   }
-
-  nav a {
-      text-decoration: none;
-      padding: 1em;
-      font-weight: bold;
+  .nav-links.active {
+      display: flex; /* Show nav links when active */
   }
-
-  nav ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-  }
-
-  nav li {
-      margin: 0;
-      font-weight: bold;
-      display: inline;
-      padding: 0.25em;
-  }
-
-  #wrapper {
-      width: 80%;
-      margin: auto;
-      display: grid;
-      grid-template-rows: 130px auto;
-      grid-template-columns: 250px auto;
+  .menu-icon {
+      display: flex; /* Show hamburger icon on smaller screens */
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  
+}
 @media (min-width: 1024px) {
   .navbar {
       position: fixed;
