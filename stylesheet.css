@@ -6,7 +6,7 @@ body {
   font-family: Verdana, Arial, sans-serif;
 }
 header {
-padding-top: 15px;
+padding-top: 30px;
 font-family: "canvas-inline", sans-serif;
 font-weight: 500;
 font-style: normal; /* Add top padding to avoid overlap with navbar */
@@ -99,7 +99,6 @@ p {
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #333;
       color: white;
       padding: 10px 0;
       text-align: center;
@@ -138,19 +137,124 @@ p {
   .menu-icon {
       display: flex; /* Show hamburger icon on smaller screens */
   }
+  header{
+    padding-top: 30px;
+   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header{
+    padding-top: 30px;
+    font-size: 2rem;
+   }
+   .wrapper {
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: max-content;
+  }
+  /* .global-main-1{
+    display: grid;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    grid-column: 1 / 6;
+    grid-row: 2 / 1 ;
+  } */
+  .item-img1{
+    display: grid;
+    justify-items: flex-end;
+    grid-column: 3 / 5;
+    max-width: 600px;
+    border: 2px dashed black;
+  }
+  .item-img2{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3 ;
+    width: fit-content;
+    border: 2px dashed black;
+  }
+  .item-img3{
+    border: 2px dashed black;
+    display: grid;
+    align-items: flex-start;
+    grid-column: 1 / 2;
+    grid-row: 3 / 3 ;
+  }
+  .item-link1-Google{
+    border: 2px dashed black;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 4 / 4 ;
+  }
+  }
+  .item-link2-kitesurf-lessons{
+    border: 2px dashed black;
+    display: grid;
+    justify-items: center;
+    grid-column: 1 / 3;
+    grid-row: 5 / 5 ;
+  }
+  .item-link3-spot{
+    border: 2px dashed black;
+    display: grid;
+    justify-items: flex-start;
+    grid-column: 3 / 5;
+    grid-row: 5 / 5 ;
+  }
+  .item-img4{
+    border: 2px dashed black;
+    display: grid;
+    align-items: center;
+    grid-column: 1 / 3;
+    grid-row: 6 / 6 ;
+  }
+  .item-text-main-presentation-1{
+    border: 2px dashed black;
+    display: grid;
+    align-items: center;
+    grid-column: 3 / 5;
+    grid-row: 6 / 6 ;
+  }
+  .item-link4-about-us{
+    border: 2px dashed black;
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 7 / 7 ;
+    justify-items: flex-start;  }
+  .item-link5-contact{
+    border: 2px dashed black;
+    display: grid;
+    grid-column: 3 / 5;
+    grid-row: 7 / 7 ;
+    justify-items: flex-end;
+  }
+  .item-img5-accomodation{
+    border: 2px dashed black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-column: 3 / 5;
+    grid-row: 8 / 8;
+  }
+  .item-text-main-presentation-accomodation-2{
+    border: 2px dashed black;
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 8 / 8;
 
+  }
   
-}
+
 @media (min-width: 1024px){
   .navbar {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #333;
+      background-color: #fbf6f6;
       color: white;
       padding: 10px 0;
       text-align: center;
@@ -168,14 +272,26 @@ p {
     color: #000;
     border: 2px dashed black;
   } */
+   header{
+    padding-top: 50px;
+    font-size: 2rem;
+
+   }
   .wrapper {
     width: 80%;
     display: grid;
-    grid-gap: 10px;
     margin-left: 10%;
     margin-right: 10%;
     grid-template-columns: repeat(4, auto);
     grid-auto-rows: max-content;
+  }
+  .global-1{
+    display: grid;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    grid-column: 1 / 5;
+    grid-row: 2 / 1 ;
   }
   .item-img1{
     display: grid;
@@ -187,7 +303,7 @@ p {
   .item-img2{
     display: grid;
     grid-column: 1 / 2;
-    grid-row: 2 / 3 ;
+    grid-row: 2 / 1 ;
     width: fit-content;
     border: 2px dashed black;
   }
@@ -217,7 +333,7 @@ p {
     border: 2px dashed black;
     display: grid;
     justify-items: center;
-    grid-column: 3 / 5;
+    grid-column: 3 / 4;
     grid-row: 5 / 5 ;
   }
   .item-img4{
@@ -237,13 +353,13 @@ p {
   .item-link4-about-us{
     border: 2px dashed black;
     display: grid;
-    grid-column: 2 / 3;
+    grid-column: 4 / 3;
     grid-row: 7 / 7 ;
-    justify-items: center;  }
+    justify-items: flex-end;  }
   .item-link5-contact{
     border: 2px dashed black;
     display: grid;
-    grid-column: 2 / 4;
+    grid-column: 5 / 4;
     grid-row: 7 / 7 ;
     justify-items: flex-end;
   }
