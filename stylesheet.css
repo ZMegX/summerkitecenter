@@ -2,10 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #49a6df;
+  background-color: #ffffff;
   font-family: Verdana, Arial, sans-serif;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 header {
 padding-top: 15px;
@@ -146,7 +144,7 @@ p {
 
   
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
   .navbar {
       position: fixed;
       top: 0;
@@ -158,32 +156,112 @@ p {
       text-align: center;
       z-index: 1000;
   }
-
-
-  body {
-    margin: 40px;
-  }
-  
-  .box {
-    background-color: #444;
-    color: #fff;
+  /* .box {
+    color: #000000;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+    border: 2px dashed black;
   }
   
   .box:nth-child(even) {
-    background-color: #ccc;
     color: #000;
-  }
-  
+    border: 2px dashed black;
+  } */
   .wrapper {
     width: 80%;
     display: grid;
     grid-gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: 250px 300px 100px;
-    grid-auto-flow: column;
+    grid-auto-rows: max-content;
   }
+  .item-img1{
+    display: grid;
+    justify-items: flex-end;
+    grid-column: 3 / 5;
+    max-width: 600px;
+    border: 2px dashed black;
+  }
+  .item-img2{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3 ;
+    width: fit-content;
+    border: 2px dashed black;
+  }
+  .item-img3{
+    border: 2px dashed black;
+    display: grid;
+    align-items: flex-start;
+    grid-column: 1 / 2;
+    grid-row: 3 / 3 ;
+  }
+  .item-link1-Google{
+    border: 2px dashed black;
+    display: grid;
+    
+    grid-column: 1 / 2;
+    grid-row: 4 / 4 ;
+  }
+  }
+  .item-link2-kitesurf-lessons{
+    border: 2px dashed black;
+    display: grid;
+    justify-items: center;
+    grid-column: 2 / 3;
+    grid-row: 5 / 5 ;
+  }
+  .item-link3-spot{
+    border: 2px dashed black;
+    display: grid;
+    justify-items: center;
+    grid-column: 3 / 5;
+    grid-row: 5 / 5 ;
+  }
+  .item-img4{
+    border: 2px dashed black;
+    display: grid;
+    align-items: center;
+    grid-column: 1 / 3;
+    grid-row: 6 / 6 ;
+  }
+  .item-text-main-presentation-1{
+    border: 2px dashed black;
+    display: grid;
+    align-items: center;
+    grid-column: 3 / 5;
+    grid-row: 6 / 6 ;
+  }
+  .item-link4-about-us{
+    border: 2px dashed black;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 7 / 7 ;
+    justify-items: center;  }
+  .item-link5-contact{
+    border: 2px dashed black;
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 7 / 7 ;
+    justify-items: flex-end;
+  }
+  .item-img5-accomodation{
+    border: 2px dashed black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-column: 3 / 5;
+    grid-row: 8 / 8;
+  }
+  .item-text-main-presentation-accomodation-2{
+    border: 2px dashed black;
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 8 / 8;
+
+  }
+
   
-}
+  
