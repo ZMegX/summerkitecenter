@@ -4,29 +4,24 @@
 body {
   background-color: #49a6df;
   font-family: Verdana, Arial, sans-serif;
-  margin: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 header {
-  padding-top: 6em; /* Add top padding to avoid overlap with navbar */
-}
-h1 {
-  font-family: Georgia, "Times New Roman", serif;
-  text-shadow: 3px 3px 3px #F2CB05;
-  margin-top: 0.25em;
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  unicode-bidi: isolate;
+padding-top: 15px;
+font-family: "canvas-inline", sans-serif;
+font-weight: 500;
+font-style: normal; /* Add top padding to avoid overlap with navbar */
 }
 nav {
   margin: 0;
   border-bottom: 1px solid #000000;
 }
-.transparent {
+/* .transparent {
   zoom: 1;
   filter: alpha(opacity=80);
   opacity: 0.5;
-}
+} */
 nav ul {
   display: flex;
   align-items: center;
@@ -35,11 +30,11 @@ nav ul {
 }
 nav li {
   margin: 0;
-  font-family: "new-zen", sans-serif;
-  font-weight: 500;
+  list-style: none;
+  font-family: "canvas-inline", sans-serif;
+  font-weight: 200;
   font-style: normal;
   display: flex;
-  list-style: none;
 }
 nav a {
   text-decoration: none;
@@ -164,11 +159,31 @@ p {
       z-index: 1000;
   }
 
-  #wrapper {
-      width: 80%;
-      margin: auto;
-      display: grid;
-      grid-template-rows: 130px auto;
-      grid-template-columns: 200px auto;
+
+  body {
+    margin: 40px;
   }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+  
+  .box:nth-child(even) {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .wrapper {
+    width: 80%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 250px 300px 100px;
+    grid-auto-flow: column;
+  }
+  
 }
