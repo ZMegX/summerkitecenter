@@ -2,8 +2,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ffffff;
+  background-color: #F2E085;
   font-family: Verdana, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
 }
 header {
 padding-top: 30px;
@@ -13,7 +16,6 @@ font-style: normal; /* Add top padding to avoid overlap with navbar */
 }
 nav {
   margin: 0;
-  border-bottom: 1px solid #000000;
 }
 /* .transparent {
   zoom: 1;
@@ -246,6 +248,11 @@ p {
     grid-row: 8 / 8;
 
   }
+  footer {
+    display: flex;
+    align-content: center;
+    grid-row: 9;
+}
   
 
 @media (min-width: 1024px){
