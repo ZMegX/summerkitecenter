@@ -68,12 +68,15 @@ nav a:hover {
   background-color: #271719;
   transition: 0.3s;
 }
+.-star1-responsive-image--main{
+  width: 25px;
+}
 p {
   font-family: "new-zen", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-/* Tab Links Spot.html*/
+/*---- Tab Links Spot.html-------*/
 .tab-links a {
   padding: 10px 20px;
   margin-right: -1px;
@@ -94,8 +97,7 @@ p {
 .tab-content :target {
   display: block;
 }
-/* Responsive Styles */
-/* Position nav bar fixed here */
+/* ------------------------------- */
 @media (min-width: 320px) {
   .navbar {
       position: fixed;
@@ -117,22 +119,53 @@ p {
       display: grid;
       grid-template-columns: 1fr;
       gap: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
       }
+        .item-img3{
+          display: flex;
+          align-items: flex-start;
+        }
+        .-star1-responsive-image-main{
+          width: 2rem;
+        }
+        .item-img1{
+          display: none;
+          justify-items: center;
+        }
+        .item-img2, .item-link1-Google, 
+        .item-img4{
+          display: grid;
+          justify-items: center;
+        }
+        .item-link2-kitesurf-lessons{
+          display: grid;
+          justify-items: right;
+          padding-top: 15px;
+          padding-bottom: 10px;
+        }
+        .item-link3-spot {
+          display: grid;
+          justify-items: right;
+          padding-bottom: 15px;
+        }
+        .item-text-main-presentation-1{
+          justify-items: center;
 
-  .-star1-responsive-image-main{
-    width: 25px;
-  }
-  .min-md320-g1-links1-2--main{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-  }
-  .item-img3{
-    display: flex;
-    align-items: flex-start;
-}
-}
+        }
+        .item-link4-about-us{
+          display: grid;
+          justify-items: flex-end;
+          padding-top: 15px;
+          padding-bottom: 10px;
+        }
+        .item-link5-contact{
+          display: grid;
+          justify-items: flex-start;
+          padding-top: 15px;
+          padding-bottom: 10px;
+        }
+    }
 @media only screen and (max-width: 767px) {
   .nav-links {
       display: none; 
@@ -156,6 +189,9 @@ p {
     padding-top: 30px;
    }
 }
+
+/* ----index.html---- */
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*---- index.html -----*/
