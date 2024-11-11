@@ -118,11 +118,15 @@ p {
       grid-template-columns: 1fr;
       gap: 15px;
       }
-  .-star1-responsive-image{
+
+  .-star1-responsive-image-main{
     width: 25px;
   }
-  nav, main, footer {
-      grid-column: 1;
+  .min-md320-g1-links1-2--main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
   }
   .item-img3{
     display: flex;
