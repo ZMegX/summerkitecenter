@@ -75,6 +75,7 @@
     font-family: "grecian-light-face", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 2rem;
   }
     @keyframes elementor-widget-text-animation{
       from {
@@ -83,14 +84,12 @@
         opacity: 0;
       }
     }
-  
     .slide-in-elementor-widget-animated-text{
       background-color: red;
       animation-name: elementor-widget-text-animation;
-    animation: elementor-widget-text-animation 1000ms;
-      animation-iteration-count: 3;
+      animation: elementor-widget-text-animation 1000ms;
+      animation-iteration-count: infinite;
     }
-  }
   .-star1-responsive-image--main{
     width: 25px;
   }
