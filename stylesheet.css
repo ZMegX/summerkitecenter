@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media (min-width: 320px) {
   * {
     box-sizing: border-box;
   }
@@ -14,6 +14,7 @@
   font-family: "canvas-inline", sans-serif;
   font-weight: 500;
   font-style: normal; 
+  font-size: 1.75rem;
   }
   nav {
     margin: 0;
@@ -69,30 +70,7 @@
     background-color: #271719;
     transition: 0.3s;
   }
-  .elementor-widget-container-main-1{
-    display: flexbox;
-    background-color: #2717;
-    font-family: "grecian-light-face", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-  }
-    @keyframes elementor-widget-text-animation{
-      from {
-            opacity: 1;      }
-      to {
-        opacity: 0;
-      }
-    }
-    .slide-in-elementor-widget-animated-text{
-      background-color: red;
-      animation-name: elementor-widget-text-animation;
-      animation: elementor-widget-text-animation 1000ms;
-      animation-iteration-count: infinite;
-    }
-  .-star1-responsive-image--main{
-    width: 25px;
-  }
+  
   p {
     font-family: "new-zen", sans-serif;
     font-weight: 300;
@@ -113,17 +91,43 @@
       display: flex;
       flex-direction: column;
   }
-  
-  
         /* -----Index.html----- */
-  #wrappermin320p{
-      display: grid;
-      gap: 15px;
-      margin-left: 5%;
-      margin-right: 5%;
-      grid-template-columns: 1fr;
-      grid-auto-rows: max-content;
+
+      .elementor-widget-container-main-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;                            
+        background-image: url(./images/Flag_of_Zanzibar.png);
+        background-size: cover;                  
+        background-position: center;              
+        border: 2px solid #271719;
+        /* box-shadow: 10px black; */
+        border-radius: 10px;  
+        font-family: "grecian-light-face", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
       }
+        @keyframes elementor-widget-text-animation{
+          from {
+                opacity: 1;      }
+          to {
+            opacity: 0;
+          }
+        }
+        .elementor-widget-animated-text{
+          color: #e8c42a;
+          animation-name: elementor-widget-text-animation;
+          animation: elementor-widget-text-animation 2200ms;
+          animation-iteration-count: infinite;
+        }
+        .elementor-widget-container{
+          display: grid;
+        justify-content: center;
+        }
+    
         .-star1-responsive-image-main{
           width: 2rem;
         }
@@ -135,9 +139,13 @@
           display: flex;
           align-items: flex-start;
         }
-        .item-img4{
+        .element-img4-teacher-photo{
           display: grid;
-          justify-items: center;
+          width: 450px;                             /* Width of the container */
+          height: 300px; 
+          background-image: url(./images/teacher-photo.jpg); 
+          background-size: cover;                   /* Scale image to cover the box */
+          background-position: center;  
         }
         .item-link2-kitesurf-lessons{
           display: flex;
@@ -198,7 +206,7 @@
     padding-top: 30px;
     font-size: 2rem;
    }
-   .wrappermin768p {
+   .wrapper {
     display: grid;
     margin-left: 5%;
     margin-right: 5%;
@@ -248,16 +256,20 @@
     grid-column: 3 / 5;
     grid-row: 5 / 5 ;
   }
-  .item-img4{
+  .element-img4-teacher-photo{
     display: grid;
-    align-items: center;
+    width: 350px;                             /* Width of the container */
+    height: 300px; 
+    background-image: url(./images/teacher-photo.jpg); 
+    background-size: cover;                   /* Scale image to cover the box */
+    background-position: center; 
     grid-column: 1 / 3;
     grid-row: 6 / 6 ;
   }
   .item-text-main-presentation-1{
     display: grid;
     align-items: center;
-    grid-column: 3 / 5;
+    grid-column: 4 / 5;
     grid-row: 6 / 6 ;
   }
   .item-link4-about-us{
@@ -362,16 +374,15 @@
   .item-link2-kitesurf-lessons{
     display: grid;
     justify-items: center;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     grid-row: 5 / 5 ;
   }
   .item-link3-spot{
     display: grid;
-    justify-items: center;
     grid-column: 3 / 4;
-    grid-row: 5 / 5 ;
+    grid-row: 4 / 4 ;
   }
-  .item-img4{
+  .element-img4-teacher-photo{
     display: grid;
     align-items: center;
     grid-column: 1 / 3;
