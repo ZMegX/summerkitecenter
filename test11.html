@@ -189,7 +189,12 @@
       align-items: center;
       width: 400px;
     }
-
+     .elementor-widget-container-jet{
+      display: flex;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 8px;
+    } 
     .elementor-widget-container {
       display: grid;
       justify-content: center;
@@ -365,7 +370,9 @@
       display: flex;
       justify-content: flex-end;
     }
-
+    .elementor-widget-container-main-1{
+      display: flex;
+    }
     .elementor-widget-container {
       display: grid;
       justify-content: center;
@@ -486,7 +493,7 @@
     font-size: 2.25rem;
     display: grid;
     /* justify-items: end; */
-    grid-column: 1 / 4 ;
+    grid-column: 2 / 6 ;
     grid-row: 1 / 1 ;
    }
 
@@ -497,74 +504,73 @@
     display: grid;
     margin-left: 5%;
     margin-right: 5%;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(8, auto);
     grid-auto-rows: max-content;
   }
   .element-item-img1-container {
-      margin-top: 3.0rem;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 400px;
-      grid-column: 2 / 4 ;
-      grid-row: 2 / 3 ;
+      grid-column: 4 / 8 ;
+      grid-row: 2;
     }
-
+    .elementor-widget-container-main-1{
+      display: grid;
+      justify-content: center;
+      grid-column: 1 / 4;
+      grid-row: 3;
+    }
     .elementor-widget-container {
       display: grid;
       justify-content: center;
-      grid-column:  /  ;
-      grid-row:  /  ;
     }
+
     .element-item-star-container{
+      display: flex;
       width: 90%;
       max-width: 600px;
       padding: 20px;
       border-radius: 8px;    
-      grid-column:  /  ;
-      grid-row:  /  ;
+      grid-column: 1 / 8 ;
+      grid-row: 4;
     }
     .element-item-link1-Google-container{
+      display: flex;
       width: 90%;
       max-width: 600px;
       border-radius: 8px;
-      grid-column:  /  ;
-      grid-row:  /  ;
+      grid-column: 1 / 4 ;
+      grid-row: 5;
     }
     .element-item-link1-container{
       width: 90%;
       max-width: 600px;
       padding: 20px;
       border-radius: 8px;
-      grid-column:  /  ;
-      grid-row:  /  ;
+      grid-column: 1 / 8 ;
+      grid-row: 6;
+    }
+    .element-img4-teacher-photo{
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 8px;
+      grid-column: 1 / 8 ;
+      grid-row: 7 / 8 ;
+    }
+    .element-item-link-4-5-container{
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 8px;
+      grid-column: 1 / 4 ;
+      grid-row: 8 ;
     }
     .element-main-accomodation-container{
       width: 90%;
       max-width: 600px;
       padding: 20px;
       border-radius: 8px;
-      grid-column:  /  ;
-      grid-row:  /  ;
-    }
-    .element-item-img1{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .element-item-link-4-5{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .element-img4-teacher-photo {
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
+      grid-column: 1 / 4 ;
+      grid-row: 9 / 10 ;
     }
 
     .element-item-link1{
@@ -604,7 +610,7 @@
       border-radius: 8px;
     }
 
-    .image-item-img1 {
+    .element-item-img1 {
       background-image: url(./images/food_1.jpg);
       background-size: cover;
       background-position: center;
@@ -698,15 +704,14 @@
           <div class="image-item-img1"></div>
         </div>
       </div>
-      <div class="elementor-widget-container-jet">
         <div class="elementor-widget-container-main-1">
           <div class="elementor-widget-container"><h2>The best</h2></div>
-          <div class="elementor-widget-jet-animated-text">
-            <h2 class="elementor-widget-animated-text">Kitesurf school</h2>
+            <div class="elementor-widget-jet-animated-text">
+              <h2 class="elementor-widget-animated-text">Kitesurf school</h2>
+            </div>
+            <div class="elementor-widget-container"><h2>in Zanzibar</h2></div>
           </div>
-          <div class="elementor-widget-container"><h2>in Zanzibar</h2></div>
-        </div>
-      </div>
+      
       <div class="element-item-star-container">
         <div class="element-item-star">
           <div class="image-item-star"></div>
@@ -756,13 +761,14 @@
           </div>
         </div>
       <div class="element-item-link-4-5-container">
-      <div class="element-item-link-4-5">
-      <div class="item-link4-about-us">
-          <a href="#">ABOUT US</a>
-      </div>
-      <div class="item-link5-contact">
-          <a href="#">CONTACT</a>
-          </div>
+        <div class="element-item-link-4-5">
+        <div class="item-link4-about-us">
+            <a href="#">ABOUT US</a>
+        </div>
+        <div class="item-link5-contact">
+            <a href="#">CONTACT</a>
+            </div>
+        </div>
       </div>
       <div class="element-main-accomodation-container">
           <div class="img-accomodation"></div>
