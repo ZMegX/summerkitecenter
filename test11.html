@@ -489,12 +489,12 @@
       text-align: center;
       z-index: 1000;
   }
-   header{
-    font-size: 2.25rem;
-    display: grid;
-    /* justify-items: end; */
-    grid-column: 2 / 6 ;
-    grid-row: 1 / 1 ;
+   header {
+        font-size: 2.25rem;
+        display: grid;
+        justify-items: end;
+        grid-column: 1 / 8;
+        grid-row: 1 / 2;
    }
 
    /* ------index.html----- */
@@ -502,20 +502,18 @@
 
    .main-1-wrapper {
     display: grid;
-    margin-left: 5%;
-    margin-right: 5%;
     grid-template-columns: repeat(8, auto);
     grid-auto-rows: max-content;
   }
   .element-item-img1-container {
-      display: flex;
-      grid-column: 4 / 8 ;
-      grid-row: 2;
+        display: flex;
+        grid-row: 2 / 3;
+        /* justify-items: center; */
+        flex-direction: row-reverse;
     }
     .elementor-widget-container-main-1{
       display: grid;
       justify-content: center;
-      grid-column: 1 / 4;
       grid-row: 3;
     }
     .elementor-widget-container {
@@ -523,53 +521,39 @@
       justify-content: center;
     }
 
-    .element-item-star-container{
-      display: flex;
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;    
-      grid-column: 1 / 8 ;
-      grid-row: 4;
+    .element-item-star-container {
+        display: flex;
+        /* width: 90%; */
+        /* max-width: 600px; */
+        /* padding: 20px; */
+        /* border-radius: 8px; */
+        grid-row: 4 / 5;
     }
-    .element-item-link1-Google-container{
-      display: flex;
-      width: 90%;
-      max-width: 600px;
-      border-radius: 8px;
-      grid-column: 1 / 4 ;
-      grid-row: 5;
+    .element-item-link1-Google-container {
+        display: flex;
+        /* width: 90%;
+        max-width: 600px;
+        border-radius: 8px; */
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
     }
-    .element-item-link1-container{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-      grid-column: 1 / 8 ;
-      grid-row: 6;
+
+    .element-item-link1-container {
+        /* width: 90%; */
+        /* max-width: 600px; */
+        /* padding: px; */
+        /* border-radius: 8px; */
+        grid-row: 6 / 7;
     }
+
     .element-img4-teacher-photo{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-      grid-column: 1 / 8 ;
       grid-row: 7 / 8 ;
     }
     .element-item-link-4-5-container{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
       grid-column: 1 / 4 ;
       grid-row: 8 ;
     }
     .element-main-accomodation-container{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-      grid-column: 1 / 4 ;
       grid-row: 9 / 10 ;
     }
 
