@@ -1,448 +1,663 @@
-@media (min-width: 320px) {
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    background-color: #F2E085;
-    font-family: Verdana, Arial, sans-serif;
-  }
-  a {
-    text-decoration: none;
-  }
-  header {
-  padding-top: 30px;      /* Add top padding to avoid overlap with navbar */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+a {
+text-decoration: none;
+}
+header{
+padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
+font-family: "canvas-inline", sans-serif;
+font-weight: 500;
+font-style: normal; 
+font-size: 1.75rem;
+}
+nav {
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #271719;
+}
+
+nav li {
+  margin: 0;
+  list-style: none;
   font-family: "canvas-inline", sans-serif;
-  font-weight: 500;
-  font-style: normal; 
-  font-size: 1.75rem;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:link {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+#Accomodation-link{
+  font-style: italic;
+}
+
+nav a:visited {
+  color: #F2CF8D;
+}
+
+nav a:hover {
+  color: #e8c42a;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #271719;
+  transition: 0.3s;
+}
+
+p {
+  font-family: "new-zen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.element-item-star{
+  display: flex;
+  margin-top: 2rem;
+}
+/* Styling for the paragraph box */
+
+.elementor-widget-container-main-1 {
+  margin-top: 3.0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  /* background-image: url(./images/Flag_of_Zanzibar.png); */
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #e6354a;
+  border-radius: 10px;
+  font-family: "grecian-light-face", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+@keyframes elementor-widget-text-animation {
+  from {
+    opacity: 1;
   }
-  nav {
-    margin: 0;
+  to {
+    opacity: 0;
   }
-  /* .transparent {
-    zoom: 1;
-    filter: alpha(opacity=80);
-    opacity: 0.5;
-  } */
-  nav ul {
+}
+
+.elementor-widget-animated-text {
+  color: #e8c42a;
+  animation-name: elementor-widget-text-animation;
+  animation: elementor-widget-text-animation 2200ms infinite;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .main-1-wrapper{
+background-color: #ffffff;
+width: 90%;
+max-width: 600px;
+width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;    border-radius: 8px;
+}
+.element-item-img1-container {
+  margin-top: 3.0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+ .elementor-widget-container-jet{
+  display: flex;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+} 
+.elementor-widget-container {
+  display: grid;
+  justify-content: center;
+}
+.element-item-star-container{
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.element-item-link1-Google-container{
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+.element-item-link1-container{
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.element-main-accomodation-container{
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.element-item-img1{
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.element-item-link-4-5{
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.element-img4-teacher-photo {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.element-item-link1{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+.element-item-link1-Google{
+  display: flex;
+  margin-top: .5rem;
+}
+.element-item-link-4-5{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+/* Container styling */
+.container {
+  margin-top: 2rem;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Specific styling for the image box */
+.image-box {
+  background-image: url(./images/teacher-photo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.image-item-img1 {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-item-star {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-image: url(./images/star-color-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  width: 2rem;
+  height: 2rem;
+}
+.item-link1-Google{
+
+}
+.img-accomodation{
+  background-image: url(./images/food_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+}
+.paragraph-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.paragraph-main-accomodation{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.kiteschool-presentation-main-test {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+nav ul {
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #271719;
-  }
-  nav li {
-    margin: 0;
-    list-style: none;
-    font-family: "canvas-inline", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    display: flex;
-  }
-  nav a {
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  nav a:link {
-    display: flex;
-    gap: 1rem;
-    color: white;
-  }
-  nav a:visited {
-    color: #F2CF8D;
-  }
-  nav a:hover {
-    color: #e8c42a;
-  }
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-  }
-  .menu-icon {
-    display: none; /* Hide hamburger icon on larger screens */
-    cursor: pointer;
-    flex-direction: column;
-    gap: 4px;
-  }
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #271719;
-    transition: 0.3s;
-  }
-  
-  p {
-    font-family: "new-zen", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      z-index: 1000;
-  }
-  .content {
-      padding-top: 10px;
-      display: flex;
-      flex-direction: column;
-  }
-        /* -----Index.html----- */
-
-      .elementor-widget-container-main-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 400px;                            
-        background-image: url(./images/Flag_of_Zanzibar.png);
-        background-size: cover;                  
-        background-position: center;              
-        border: 2px solid #271719;
-        /* box-shadow: 10px black; */
-        border-radius: 10px;  
-        font-family: "grecian-light-face", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.25rem;
-      }
-        @keyframes elementor-widget-text-animation{
-          from {
-                opacity: 1;      }
-          to {
-            opacity: 0;
-          }
-        }
-        .elementor-widget-animated-text{
-          color: #e8c42a;
-          animation-name: elementor-widget-text-animation;
-          animation: elementor-widget-text-animation 2200ms;
-          animation-iteration-count: infinite;
-        }
-        .elementor-widget-container{
-          display: grid;
-        justify-content: center;
-        }
-    
-        .-star1-responsive-image-main{
-          width: 2rem;
-        }
-        .item-img1{
-          display: none;
-          justify-items: center;
-        }
-        .item-img3{
-          display: flex;
-          align-items: flex-start;
-        }
-        .element-img4-teacher-photo{
-          display: grid;
-          width: 450px;                             /* Width of the container */
-          height: 300px; 
-          background-image: url(./images/teacher-photo.jpg); 
-          background-size: cover;                   /* Scale image to cover the box */
-          background-position: center;  
-        }
-        .item-link2-kitesurf-lessons{
-          display: flex;
-          justify-items: flex-end;
-          padding-top: 15px;
-          padding-bottom: 10px;
-        }
-        .item-link3-spot {
-          display: grid;
-          justify-items: right;
-          padding-bottom: 15px;
-        }
-        .item-text-main-presentation-1{
-          justify-content: center;
-
-        }
-        .item-link4-about-us{
-          display: grid;
-          justify-items: flex-end;
-          padding-top: 15px;
-          padding-bottom: 10px;
-        }
-        .item-link5-contact{
-          display: grid;
-          justify-items: flex-start;
-          padding-top: 15px;
-          padding-bottom: 10px;
-        }
-    }
-@media only screen and (max-width: 767px) {
-  .nav-links {
-      display: none; 
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      gap: 1rem;
-  }
-  .nav-links.active {
-      display: flex; 
-  }
-  .menu-icon {
-      display: flex; 
-  }
-  header{
-    padding-top: 30px;
-   }
-   
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-          /*---- index.html -----*/
-  
-  header{
-    padding-top: 30px;
-    font-size: 2rem;
-   }
-   .wrapper {
-    display: grid;
-    margin-left: 5%;
-    margin-right: 5%;
-    grid-template-columns: repeat(4, auto);
-    grid-auto-rows: max-content;
-  }
-            /* .global-main-1{
-              display: grid;
-              margin-left: 0;
-              margin-right: 0;
-              padding-bottom: 10px;
-              grid-column: 1 / 6;
-              grid-row: 2 / 1 ;
-            } */
-  .item-img1{
-    display: grid;
-    justify-items: flex-end;
-    grid-column: 3 / 5;
-    max-width: 600px;
-  }
-  .item-img2{
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+  /* .nav-links.active {
     display: flex;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2 ;
-    width: 100;
   }
-  .item-img3{
-    display: flex;
-    grid-column: 1 / 2;
-    grid-row: 3 / 3 ;
-  }
-  .item-link1-Google{
-    display: grid;
-    grid-column: 1 / 2;
-    grid-row: 4 / 4 ;
-  }
-  }
-  .item-link2-kitesurf-lessons{
-    display: flex;
-    justify-items: center;
-    grid-column: 1 / 3;
-    grid-row: 5 / 5 ;
-  }
-  .item-link3-spot{
-    display: grid;
-    justify-items: flex-start;
-    grid-column: 3 / 5;
-    grid-row: 5 / 5 ;
-  }
-  .element-img4-teacher-photo{
-    display: grid;
-    width: 350px;                             /* Width of the container */
-    height: 300px; 
-    background-image: url(./images/teacher-photo.jpg); 
-    background-size: cover;                   /* Scale image to cover the box */
-    background-position: center; 
-    grid-column: 1 / 3;
-    grid-row: 6 / 6 ;
-  }
-  .item-text-main-presentation-1{
-    display: grid;
-    align-items: center;
-    grid-column: 4 / 5;
-    grid-row: 6 / 6 ;
-  }
-  .item-link4-about-us{
-    display: grid;
-    grid-column: 4 / 5;
-    grid-row: 7 / 7 ;
-    justify-items: flex-start;  }
-  .item-link5-contact{
-    display: grid;
-    grid-column: 3 / 5;
-    grid-row: 7 / 7 ;
-    justify-items: flex-end;
-  }
-  .item-img5-accomodation{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-column: 3 / 5;
-    grid-row: 8 / 8;
-  }
-  .item-text-main-presentation-accomodation-2{
-    display: grid;
-    grid-column: 1 / 3;
-    grid-row: 8 / 8;
 
-  }
-  footer {
-    display: grid;
-    justify-items: center;
-    grid-column: 1 / 5;
-    grid-row: 9 / 9;
+  .menu-icon {
+    display: flex;
+  } */
+
+  .main-1-wrapper{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;    border-radius: 8px;
+}
+.element-item-img1-container {
+  width: 100%;
+  border-radius: 8px;
+}
+.elementor-widget-container-main-1{
+  display: flex;
+}
+.elementor-widget-container {
+  display: grid;
+  justify-content: center;
+}
+.element-item-star-container{
+  max-width: 600px;
+  border-radius: 8px;
+}
+.element-item-link1-Google-container{
+  display: flex;
+}
+.element-item-link1-container{
+  display: flex;
+}
+.element-item-img1{
+  display: flex;
+  border-radius: 8px;
+}
+.element-item-link-4-5{
+  display: flex;
+}
+.element-img4-teacher-photo {
+  width: 100%;
+  border-radius: 8px;
 }
 
+.element-item-link1{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+.element-item-link1-Google{
+  display: flex;
+  margin-top: .5rem;
+}
+.element-item-link-4-5{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.element-main-accomodation-container{
+  display: flex;
+}
 
-/*---- spot.html -----*/
+/* Container styling */
+.container {
+  margin-top: 2rem;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
+/* Specific styling for the image box */
+.image-box {
+  background-image: url(./images/teacher-photo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:auto;
+  border-radius: 8px;
+}
 
-.tab1-img-responsive{
-      width: 250px;
-    }
+.image-item-img1 {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-item-star {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/star-color-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+.item-link1-Google{
+
+}
+
+}
 
 @media (min-width: 1024px){
-  .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #fbf6f6;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      z-index: 1000;
-  }
-   header{
-    padding-top: 50px;
-    font-size: 2rem;
-   }
-
-   /* ------index.html----- */
-
-
-   .wrapper {
-    width: 80%;
-    display: grid;
-    margin-left: 10%;
-    margin-right: 10%;
-    grid-template-columns: repeat(4, auto);
-    grid-auto-rows: max-content;
-  }
-  .global-1{
+  .nav-links {
     display: flex;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 10px;
-    grid-column: 1 / 5;
-    grid-row: 2 / 1 ;
-  }
-  .item-img1{
+    gap: 1rem;
+    flex-direction: row;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #271719;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+header {
+    font-size: 2.25rem;
     display: grid;
-    justify-items: flex-end;
-    grid-column: 3 / 5;
+    justify-items: end;
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+}
+
+/* ------index.html----- */
+
+
+.main-1-wrapper {
+display: grid;
+grid-template-columns: repeat(8, auto);
+grid-auto-rows: max-content;
+}
+.element-item-img1-container {
+    display: flex;
+    grid-row: 2 / 3;
+    /* justify-items: center; */
+    flex-direction: row-reverse;
+}
+.elementor-widget-container-main-1{
+  display: grid;
+  justify-content: center;
+  grid-row: 3;
+}
+.elementor-widget-container {
+  display: grid;
+  justify-content: center;
+}
+
+.element-item-star-container {
+    display: flex;
+    /* width: 90%; */
+    /* max-width: 600px; */
+    /* padding: 20px; */
+    /* border-radius: 8px; */
+    grid-row: 4 / 5;
+}
+.element-item-link1-Google-container {
+    display: flex;
+    /* width: 90%;
     max-width: 600px;
-  }
-  .item-img2{
-    display: grid;
+    border-radius: 8px; */
     grid-column: 1 / 2;
-    grid-row: 2 / 1 ;
-    width: fit-content;
-  }
-  .item-img3{
-    display: flex;
-    align-items: flex-start;
-    grid-column: 1 / 2;
-    grid-row: 3 / 3 ;
-  }
-  .item-link1-Google{
-    display: grid;
-    grid-column: 1 / 2;
-    grid-row: 4 / 4 ;
-  }
-  }
-  .item-link2-kitesurf-lessons{
-    display: grid;
-    justify-items: center;
-    grid-column: 3 / 4;
-    grid-row: 5 / 5 ;
-  }
-  .item-link3-spot{
-    display: grid;
-    grid-column: 3 / 4;
-    grid-row: 4 / 4 ;
-  }
-  .element-img4-teacher-photo{
-    display: grid;
-    align-items: center;
-    grid-column: 1 / 3;
-    grid-row: 6 / 6 ;
-  }
-  .item-text-main-presentation-1{
-    display: grid;
-    align-items: center;
-    grid-column: 3 / 5;
-    grid-row: 6 / 6 ;
-  }
-  .item-link4-about-us{
-    display: grid;
-    grid-column: 4 / 3;
-    grid-row: 7 / 7 ;
-    justify-items: flex-end;  }
-  .item-link5-contact{
-    display: grid;
-    grid-column: 5 / 4;
-    grid-row: 7 / 7 ;
-    justify-items: flex-end;
-  }
-  .item-img5-accomodation{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-column: 3 / 5;
-    grid-row: 8 / 8;
-  }
-  .item-text-main-presentation-accomodation-2{
-    display: grid;
-    grid-column: 1 / 3;
-    grid-row: 8 / 8;
-
-  }
-
-
-/*---- Tab Links Spot.html-------*/
-
-
-.tab-links a {
-  padding: 10px 20px;
-  margin-right: -1px;
-  background-color: #f1f1f1;
-  text-decoration: none;
-  border: 1px solid #ddd;
-  color: #333;
+    grid-row: 5 / 6;
 }
-.tab-links a:target {
-  background-color: #ccc;
+
+.element-item-link1-container {
+  display: flex;
+    /* width: 90%; */
+    /* max-width: 600px; */
+    /* padding: px; */
+    /* border-radius: 8px; */
+    grid-column: 4 / 8;           /* <---- here last update instead of 1 / 4 */
+    grid-row: 6 / 7;
 }
-/* Content Display */
 
+.element-img4-teacher-photo{
+  grid-row: 7 / 8 ;
+}
+.element-item-link-4-5-container{
+  display: flex;
+  grid-row: 8 ;
+}
+.element-main-accomodation-container{
+  display: flex;
+  grid-row: 9 / 10 ;
+}
 
-.content {
-  display: none;
+.element-item-link1{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+.element-item-link1-Google{
+  display: flex;
+  margin-top: .5rem;
+}
+.element-item-link-4-5{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.element-item-img1{
+  display: flex;
+  border-radius: 8px;
+  width: 350px;
+  height: auto;
+}
+.image-item-img1{
+  display: flex;
+  border-radius: 8px;
+  width: 350px;
+  height: auto;
+}
+
+/* Container styling */
+.container {
+  margin-top: 2rem;
   padding: 20px;
-  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.tab-content :target {
-  display: block;
+
+/* Specific styling for the image box */
+.image-box {
+  background-image: url(./images/teacher-photo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
-/* ------------------------------- */
+
+.element-item-img1 {
+  background-image: url(./images/DSC09849.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.image-item-star {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/star-color-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+.item-link1-Google{
+
+}
+.img-accomodation{
+  background-image: url(./images/food_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+}
+.paragraph-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.paragraph-main-accomodation{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.kiteschool-presentation-main-test {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* .item-text-main-presentation-1{
+display: grid;
+align-items: center;
+grid-column: 3 / 5;
+grid-row: 8 / 9 ;
+grid-column:  /  ;
+grid-row:  /  ;
+} */
