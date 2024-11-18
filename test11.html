@@ -3,755 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.typekit.net/yty2ajt.css">
-  <title>Summer Kite Center School test-mobile-to-desktop</title>
+  <title>Document</title>
   <style>
-    /* Set up body styling */
-    body {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      background-color: #f0f0f0;
-    }
-    a {
-    text-decoration: none;
-  }
-    header{
-    padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
-    font-family: "canvas-inline", sans-serif;
-    font-weight: 500;
-    font-style: normal; 
-    font-size: 1.75rem;
-  }
-    nav {
-      margin: 0;
-    }
-
-    nav ul {
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background-color: #271719;
-    }
-
-    nav li {
-      margin: 0;
-      list-style: none;
-      font-family: "canvas-inline", sans-serif;
-      font-weight: 200;
-      font-style: normal;
-      display: flex;
-    }
-
-    nav a {
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    nav a:link {
-      display: flex;
-      gap: 1rem;
-      color: white;
-    }
-    #Accomodation-link{
-      font-style: italic;
-    }
-
-    nav a:visited {
-      color: #F2CF8D;
-    }
-
-    nav a:hover {
-      color: #e8c42a;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .menu-icon {
-      display: none;
-      cursor: pointer;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .bar {
-      width: 25px;
-      height: 3px;
-      background-color: #271719;
-      transition: 0.3s;
-    }
-
-    p {
-      font-family: "new-zen", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-    }
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      z-index: 1000;
-    }
-
-    .content {
-      padding-top: 10px;
-      display: flex;
-      flex-direction: column;
-    }
-    .element-item-star{
-      display: flex;
-      margin-top: 2rem;
-    }
-    /* Styling for the paragraph box */
-    
-    .elementor-widget-container-main-1 {
-      margin-top: 3.0rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 400px;
-      /* background-image: url(./images/Flag_of_Zanzibar.png); */
-      background-size: cover;
-      background-position: center;
-      border: 2px solid #e6354a;
-      border-radius: 10px;
-      font-family: "grecian-light-face", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.25rem;
-    }
-
-    @keyframes elementor-widget-text-animation {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
-    }
-
-    .elementor-widget-animated-text {
-      color: #e8c42a;
-      animation-name: elementor-widget-text-animation;
-      animation: elementor-widget-text-animation 2200ms infinite;
-    }
-
-
-
-    @media only screen and (max-width: 767px) {
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background-color: #333;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        gap: 1rem;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .menu-icon {
-        display: flex;
-      }
-
-      .main-1-wrapper{
-    background-color: #ffffff;
-    width: 90%;
-    max-width: 600px;
-    width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;    border-radius: 8px;
-  }
-    .element-item-img1-container {
-      margin-top: 3.0rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 400px;
-    }
-     .elementor-widget-container-jet{
-      display: flex;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    } 
-    .elementor-widget-container {
-      display: grid;
-      justify-content: center;
-    }
-    .element-item-star-container{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .element-item-link1-Google-container{
-      width: 90%;
-      max-width: 600px;
-      border-radius: 8px;
-    }
-    .element-item-link1-container{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .element-main-accomodation-container{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .element-item-img1{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .element-item-link-4-5{
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .element-img4-teacher-photo {
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    .element-item-link1{
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      margin-top: 2rem;
-    }
-    .element-item-link1-Google{
-      display: flex;
-      margin-top: .5rem;
-    }
-    .element-item-link-4-5{
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-    }
-
-    /* Container styling */
-    .container {
-      margin-top: 2rem;
-      padding: 20px;
-      border-radius: 8px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    /* Specific styling for the image box */
-    .image-box {
-      background-image: url(./images/teacher-photo.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 200px;
-      border-radius: 8px;
-    }
-
-    .image-item-img1 {
-      width: 350px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .image-item-star {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /* background-image: url(./images/star-color-1.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; */
-      width: 2rem;
-      height: 2rem;
-    }
-    .item-link1-Google{
-
-    }
-    .img-accomodation{
-      background-image: url(./images/food_1.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 200px;
-      border-radius: 8px;
-    }
-
-  }
-  .paragraph-box {
-      background-color: rgba(255, 255, 255, 0.9);
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .paragraph-main-accomodation{
-      background-color: rgba(255, 255, 255, 0.9);
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .kiteschool-presentation-main-test {
-      font-size: 1.1em;
-      color: #333;
-      line-height: 1.6;
-      margin: 0;
-    }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background-color: #333;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        gap: 1rem;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .menu-icon {
-        display: flex;
-      }
-
-      .main-1-wrapper{
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;    border-radius: 8px;
-  }
-    .element-item-img1-container {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .elementor-widget-container-main-1{
-      display: flex;
-    }
-    .elementor-widget-container {
-      display: grid;
-      justify-content: center;
-    }
-    .element-item-star-container{
-      max-width: 600px;
-      border-radius: 8px;
-    }
-    .element-item-link1-Google-container{
-      display: flex;
-    }
-    .element-item-link1-container{
-      display: flex;
-    }
-    .element-item-img1{
-      display: flex;
-      border-radius: 8px;
-    }
-    .element-item-link-4-5{
-      display: flex;
-    }
-    .element-img4-teacher-photo {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .element-item-link1{
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      margin-top: 2rem;
-    }
-    .element-item-link1-Google{
-      display: flex;
-      margin-top: .5rem;
-    }
-    .element-item-link-4-5{
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-    }
-
-    /* Container styling */
-    .container {
-      margin-top: 2rem;
-      padding: 20px;
-      border-radius: 8px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    /* Specific styling for the image box */
-    .image-box {
-      background-image: url(./images/teacher-photo.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 200px;
-      border-radius: 8px;
-    }
-
-    .image-item-img1 {
-      width: 350px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .image-item-star {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-image: url(./images/star-color-1.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 2rem;
-      height: 2rem;
-    }
-    .item-link1-Google{
-
-    }
-
-  }
-  
-    @media (min-width: 1024px){
-  .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #fbf6f6;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      z-index: 1000;
-  }
-   header {
-        font-size: 2.25rem;
-        display: grid;
-        justify-items: end;
-        grid-column: 1 / 8;
-        grid-row: 1 / 2;
-   }
-
-   /* ------index.html----- */
-
-
-   .main-1-wrapper {
-    display: grid;
-    grid-template-columns: repeat(8, auto);
-    grid-auto-rows: max-content;
-  }
-  .element-item-img1-container {
-        display: flex;
-        grid-row: 2 / 3;
-        /* justify-items: center; */
-        flex-direction: row-reverse;
-    }
-    .elementor-widget-container-main-1{
-      display: grid;
-      justify-content: center;
-      grid-row: 3;
-    }
-    .elementor-widget-container {
-      display: grid;
-      justify-content: center;
-    }
-
-    .element-item-star-container {
-        display: flex;
-        /* width: 90%; */
-        /* max-width: 600px; */
-        /* padding: 20px; */
-        /* border-radius: 8px; */
-        grid-row: 4 / 5;
-    }
-    .element-item-link1-Google-container {
-        display: flex;
-        /* width: 90%;
-        max-width: 600px;
-        border-radius: 8px; */
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
-    }
-
-    .element-item-link1-container {
-      display: flex;
-        /* width: 90%; */
-        /* max-width: 600px; */
-        /* padding: px; */
-        /* border-radius: 8px; */
-        grid-column: 4 / 8;           /* <---- here last update instead of 1 / 4 */
-        grid-row: 6 / 7;
-    }
-
-    .element-img4-teacher-photo{
-      grid-row: 7 / 8 ;
-    }
-    .element-item-link-4-5-container{
-      display: flex;
-      grid-row: 8 ;
-    }
-    .element-main-accomodation-container{
-      grid-row: 9 / 10 ;
-    }
-
-    .element-item-link1{
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      margin-top: 2rem;
-    }
-    .element-item-link1-Google{
-      display: flex;
-      margin-top: .5rem;
-    }
-    .element-item-link-4-5{
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-    }
-
-    /* Container styling */
-    .container {
-      margin-top: 2rem;
-      padding: 20px;
-      border-radius: 8px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    /* Specific styling for the image box */
-    .image-box {
-      background-image: url(./images/teacher-photo.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-      border-radius: 8px;
-    }
-
-    .element-item-img1 {
-      background-image: url(./images/DSC09849.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-      border-radius: 8px;
-    }
-
-    .image-item-star {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-image: url(./images/star-color-1.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 2rem;
-      height: 2rem;
-    }
-    .item-link1-Google{
-
-    }
-    .img-accomodation{
-      background-image: url(./images/food_1.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 200px;
-      border-radius: 8px;
-    }
-
-  }
-  .paragraph-box {
-      background-color: rgba(255, 255, 255, 0.9);
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .paragraph-main-accomodation{
-      background-color: rgba(255, 255, 255, 0.9);
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .kiteschool-presentation-main-test {
-      font-size: 1.1em;
-      color: #333;
-      line-height: 1.6;
-      margin: 0;
-    }
-  
-  /* .item-text-main-presentation-1{
-    display: grid;
-    align-items: center;
-    grid-column: 3 / 5;
-    grid-row: 8 / 9 ;
-    grid-column:  /  ;
-    grid-row:  /  ;
-  } */
- 
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
+.tabs {
+    display: flex;
+    flex-direction: column; /* Stack content and buttons vertically */
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Hide Radio Buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+    border-top: 2px solid #ddd; /* Separate buttons from content */
+    background: #fff;
+}
+
+.tab-button {
+  flex: 1; /* Equal width for buttons */
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    background: none;
+    border-top: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+.tab-button:hover,
+.tab-button:focus {
+    color: #0056b3;
+}
+
+
+input[type="radio"]:checked + .tab-button {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Tab Content */
+.tab-content .tab-panel {
+    display: none;
+}
+
+input[type="radio"]:nth-of-type(1):checked ~ .tab-content #content1,
+input[type="radio"]:nth-of-type(2):checked ~ .tab-content #content2,
+input[type="radio"]:nth-of-type(3):checked ~ .tab-content #content3 {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.image-box {
+  background-image: url(./images/teacher-photo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
   </style>
 </head>
 <body>
-    <div class="main-1-wrapper">
-      <header>
-        <h1>Summer Kite Center School</h1>
-       </header>
-      <div class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="./main.html">Home</a></li>
-            <li><a href="./book.html">Book</a></li>
-            <li><a href="./Kiteschool.html">Kiteschool</a></li>
-            <li><a href="./spot.html">KiteSurf Spot:<br><span id="Accomodation-link">Accomodation</span></a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="element-item-img1-container">
-        <div class="element-item-img1">
-          <img src="./images/DSC09849.jpg" class="image-item-img1" 
-          alt="Summer Kite Center school photo, with a kite on the beach in the front">
-        </div>
-      </div>
-        <div class="elementor-widget-container-main-1">
-          <div class="elementor-widget-container"><h2>The best</h2></div>
-            <div class="elementor-widget-jet-animated-text">
-              <h2 class="elementor-widget-animated-text">Kitesurf school</h2>
+    <div class="tabs">
+        <!-- Radio Buttons (Hidden) -->
+        <input type="radio" id="tab1" name="tab-group" checked>
+        <input type="radio" id="tab2" name="tab-group">
+        <input type="radio" id="tab3" name="tab-group">
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <div class="tab-panel" id="content1">
+              <div class="element-img4-teacher-photo">
+              <img src="./images/teacher-photo.png" class="image-box"
+              alt="Photo of a teacher from the team, on Paje Beach, in zanzibar, with a sailing boat and blue lagoon">
             </div>
-            <div class="elementor-widget-container"><h2>in Zanzibar</h2></div>
-          </div>
-      
-      <div class="element-item-star-container">
-        <div class="element-item-star">
-            <img src="./images/star-color-1.png" class="image-item-star" 
-            alt="star image">
-            <img src="./images/star-color-1.png" class="image-item-star" 
-            alt="star image">
-            <img src="./images/star-color-1.png" class="image-item-star" 
-            alt="star image">
-            <img src="./images/star-color-1.png" class="image-item-star" 
-            alt="star image">
-            <img src="./images/star-color-1.png" class="image-item-star" 
-            alt="star image">
-        </div>
-      </div>
-        <div class="element-item-link1-Google-container">
-        <div class="element-item-link1-Google">
-            <div class="item-link1-Google">
-              <a href="#"
-                  >9.5 - Based on 1365 reviews on Google</a>
+              <div class="paragraph-box">
+              At Zanzibar's first and finest kitesurf school, 
+              surrender to the ultimate kitesurfing experience.
+               Enter a world of amazing landscape, professional training, 
+               and first-rate equipment. 
+               Perfecting the art of kitesurfing
+               on Paje Beach, renowned for its 
+              exceptional circumstances and
+                 unmatched beauty, we have been since 2016.
+                  Our love for this exciting
+                  sport motivates us to offer kitesurfers 
+                  of any ability, from beginners to expert, the greatest service.</div>
             </div>
-          </div>
-      </div>
-      <div class="element-item-link1-container">
-        <div class="element-item-link1">
-              <div class="item-link2-kitesurf-lessons">
-                <a href="./Kiteschool.html"
-                    >KITESURF LESSONS
-                </a>
+            <div class="tab-panel" id="content2">
+              <div class="element-main-accomodation-container">
+            <img src="./images/znzflag.png" class="img-accomodation"
+            alt="Zanzibar flag">
             </div>
-            <div class="item-link3-spot">
-                <a href="./spot.html"
-                    >KITE AND STAY AT THE RESORT
-                </a>
-            </div>
-        </div>
-      </div>
-        <div class="element-img4-teacher-photo">
-          <img src="./images/teacher-photo.jpg" class="image-box"
-          alt="Photo of a teacher from the team, on Paje Beach, in zanzibar, with a sailing boat and blue lagoon">
-        </div>
-          <h2>KITESURF SCHOOL</h2>
-          <div class="paragraph-box">
-              <p class="kiteschool-presentation-main-test">
-                At Zanzibar's first and finest kitesurf school, surrender to the
-                ultimate kitesurfing experience. Enter a world of amazing landscape,
-                professional training, and first-rate equipment. Perfecting the art of
-                kitesurfing on Paje Beach, renowned for its exceptional circumstances and
-                unmatched beauty, we have been since 2016. Our love for this exciting
-                sport motivates us to offer kitesurfers of any ability, from beginners to
-                expert, the greatest service.
-              </p>
-              <button>Click Me</button>
-          </div>
-        </div>
-      <div class="element-item-link-4-5-container">
-        <div class="element-item-link-4-5">
-        <div class="item-link4-about-us">
-            <a href="#">ABOUT US</a>
-        </div>
-        <div class="item-link5-contact">
-            <a href="#">CONTACT</a>
-            </div>
-        </div>
-      </div>
-      <div class="element-main-accomodation-container">
-          <img src="./images/znzflag.png" class="img-accomodation"
-          alt="Zanzibar flag">
-            <h2>It's time, change your DAY</h2>
-            <div class="paragraph-main-accomodation">
-            <p class="kiteschool-presentation-main-test">Whether you’re seeking a romantic getaway, 
-              a family vacation, or a rejuvenating escape,
+              <div class="paragraph-main-accomodation">Whether you’re seeking a romantic getaway, 
+                a family vacation, or a rejuvenating escape, 
                 Paje Beach Paradise invites you to experience 
-                the magic of a beachfront paradise in Zanzibar.
-                 Let us be your gateway to endless summer memories 
-                 and unparalleled relaxation.</p></div>
-      </div>
+                the magic of a beachfront paradise in Zanzibar. 
+                Let us be your gateway to endless summer
+                 memories and unparalleled relaxation.</div>
+                   </div>
+            <div class="tab-panel" id="content3">Any questions send us a mail at <a href="mailto:kynoku.mp@gmail.com">Summer kite center</a> </div>
+        </div>
+                <!-- Tab Navigation -->
+                <div class="tab-buttons">
+                  <label for="tab1" class="tab-button">KITESURF SCHOOL</label>
+                  <label for="tab2" class="tab-button">It's time, change your DAY</label>
+                  <label for="tab3" class="tab-button">Contact</label>
+              </div>
     </div>
-      <script>
-      function toggleMenu() {
-        document.querySelector('.nav-links').classList.toggle('active');
-      }
-    </script>
-  </body>
+</body>
 </html>
