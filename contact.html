@@ -166,6 +166,12 @@ button[type="submit"] {
   margin-top: 10px;
     padding: 12px;
 }
+.aside {
+  display: none;
+}
+h4 {
+  display: none;
+}
  }
 
  @media only screen and (min-width: 482px) {
@@ -297,7 +303,19 @@ button[type="submit"] {
   margin-top: 10px;
     padding: 12px;
 }
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
 
+aside > p {
+  margin: 0.5rem;
+}
  }
 
 
@@ -330,32 +348,37 @@ button[type="submit"] {
                 </div>
                 <div class="wrapper">
                     <div class="container">
-                        <fieldset class="fieldset-container">
-                            <legend>Contact us!</legend>
-                            <form action="/submit" method="POST">
-                                <label for="first-name" id="first-name-label" accesskey="f">First Name:</label>
-                                <input type="text" id="first-name" name="first-name" aria-labelledby="first-name-label">
-                                
-                                <label for="last-name" id="last-name-label" accesskey="l">Last Name:</label>
-                                <input type="text" id="last-name" name="last-name" aria-labelledby="last-name-label" required>
-                                
-                                <label for="guest-email" id="guest-email-label" accesskey="e">Email:</label>
-                                <input type="email" id="guest-email" name="guest-email" aria-labelledby="guest-email-label" required>
-                                
-                                <label for="message" id="message-label" accesskey="m">Write your message:</label>
-                                <textarea name="message" id="message" aria-labelledby="message-label" cols="40" rows="5"></textarea>
-                                
-                                <button type="submit" id="submit-button-contact-html" accesskey="s">Submit</button>
-                            </form>
-                        </fieldset>
-                    </div>
-                    <div class="element-img1-container">
+                      <fieldset class="fieldset-container">
+                        <legend>Contact us!</legend>
+                        <form action="/submit" method="POST">
+                            <label for="first-name" id="first-name-label" accesskey="f">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" aria-labelledby="first-name-label">
+                            
+                            <label for="last-name" id="last-name-label" accesskey="l">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" aria-labelledby="last-name-label" required>
+                            
+                            <label for="guest-email" id="guest-email-label" accesskey="e">Email:</label>
+                            <input type="email" id="guest-email" name="guest-email" aria-labelledby="guest-email-label" required>
+                            
+                            <label for="message" id="message-label" accesskey="m">Write your message:</label>
+                            <textarea name="message" id="message" aria-labelledby="message-label" cols="40" rows="5"></textarea>
+                            
+                            <button type="submit" id="submit-button-contact-html" accesskey="s">Submit</button>
+                        </form>
+                      </fieldset>
+                      <aside>
+                        <h4>We strive to create 
+                          the perfect kitesurf trip—send us a message, 
+                          and let’s make it happen!</h4>
+                      </aside>
+                      </div>
+                      <div class="element-img1-container">
                       <div class="element-img1">
-                        <picture>
-                          <source media="(min-width:650px)" srcset="./imagesupd/photo-contact-650.jpg">
-                          <source media="(min-width:465px)" srcset="./imagesupd/photo-contact-465.jpg">
-                          <img src="./imagesupd/photo-contact-650.jpg" alt="Flowers" style="width:auto;">
-                        </picture>
+                      <picture>
+                      <source media="(min-width:650px)" srcset="./imagesupd/photo-contact-650.jpg">
+                      <source media="(min-width:465px)" srcset="./imagesupd/photo-contact-465.jpg">
+                      <img src="./imagesupd/photo-contact-650.jpg" alt="Flowers" style="width:auto;">
+                      </picture>
                       </div>
                   </div>
                 </div>
