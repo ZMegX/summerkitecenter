@@ -1,6 +1,5 @@
 body {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0;
@@ -18,7 +17,6 @@ font-size: 1.75rem;
 nav {
   margin: 0;
 }
-
 nav ul {
   margin: 0;
   display: flex;
@@ -26,7 +24,6 @@ nav ul {
   justify-content: space-around;
   background-color: #271719;
 }
-
 nav li {
   margin: 0;
   list-style: none;
@@ -35,12 +32,10 @@ nav li {
   font-style: normal;
   display: flex;
 }
-
 nav a {
   text-decoration: none;
   font-size: 1rem;
 }
-
 nav a:link {
   display: flex;
   gap: 1rem;
@@ -49,40 +44,33 @@ nav a:link {
 #Accomodation-link{
   font-style: italic;
 }
-
 nav a:visited {
   color: #F2CF8D;
 }
-
 nav a:hover {
   color: #e8c42a;
 }
-
 .nav-links {
   display: flex;
   gap: 1rem;
 }
-
 .menu-icon {
   display: none;
   cursor: pointer;
   flex-direction: column;
   gap: 4px;
 }
-
 .bar {
   width: 25px;
   height: 3px;
   background-color: #271719;
   transition: 0.3s;
 }
-
 p {
   font-family: "new-zen", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-
 .navbar {
   position: fixed;
   top: 0;
@@ -93,7 +81,6 @@ p {
   text-align: center;
   z-index: 1000;
 }
-
 .content {
   padding-top: 10px;
   display: flex;
@@ -102,6 +89,26 @@ p {
 .element-item-star{
   display: flex;
   margin-top: 2rem;
+}
+.paragraph-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* border: 2px solid #ddd; */
+  border-radius: 8px;
+  /* padding: 15px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+.paragraph-main-accomodation{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.kiteschool-presentation-main-test {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
 }
 /* Styling for the paragraph box */
 
@@ -168,7 +175,6 @@ width: 90%;
 max-width: 600px;
 width: 90%;
   max-width: 600px;
-  padding: 20px;
   border-radius: 8px;    border-radius: 8px;
 }
 .element-item-img1-container {
@@ -299,26 +305,7 @@ width: 90%;
 }
 
 }
-.paragraph-box {
-  background-color: rgba(255, 255, 255, 0.9);
-  /* border: 2px solid #ddd; */
-  border-radius: 8px;
-  /* padding: 15px; */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-}
-.paragraph-main-accomodation{
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.kiteschool-presentation-main-test {
-  font-size: 1.1em;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav-links {
