@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <style>
- @media (max-width: 767px) {
+ @media (max-width: 481px) {
   body {
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0;
+}
+html, body {
+  overflow-x:hidden 
 }
         a {
 text-decoration: none;
@@ -105,12 +108,11 @@ nav a:hover {
   }
 header{
   display: flex;
-  align-items: ;
-  padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
+  padding-top: 0.25rem;      /* Add top padding to avoid overlap with navbar */
   font-family: "canvas-inline", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   flex-direction: row;
   justify-content: flex-end;
 }
@@ -122,31 +124,38 @@ header{
   .container{
     display: flex;
     width:100%;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
-.element-img1-container{
+  .element-img1-container{
   display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
  
   fieldset {
-    margin: 8px;
+    margin-top: 1rem;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     gap: 1em;
-    background-color: #EAEAEA;
+    background-color: #da1e1e;
     font-family: "new-zen", sans-serif;
-font-weight: 100;
-font-style: normal;
+    font-weight: 100;
+    font-style: normal;
+    max-width: 481px; /* Limit max width */
+    width: 100%; /* Ensure it scales for smaller screens */
+    box-sizing: border-box; /* Include padding in width calculation */
     
 }
 label {
-    float: none;
-    display: block;
-    font-family: "new-zen", sans-serif;
-font-weight: 100;
-font-style: normal;
+  margin-top: 10px;
+  float: none;
+  display: block;
+  font-family: "new-zen", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 input, textarea {
@@ -156,8 +165,7 @@ input, textarea {
 
 
 button[type="submit"] {
-    grid-column: 1 / 2;
-    width: 100%;
+  margin-top: 10px;
     padding: 12px;
 }
  }
@@ -204,7 +212,7 @@ button[type="submit"] {
                                 <input type="email" id="guest-email" name="guest-email" aria-labelledby="guest-email-label" required>
                                 
                                 <label for="message" id="message-label" accesskey="m">Write your message:</label>
-                                <textarea name="message" id="message" aria-labelledby="message-label" cols="50" rows="5"></textarea>
+                                <textarea name="message" id="message" aria-labelledby="message-label" cols="40" rows="5"></textarea>
                                 
                                 <button type="submit" id="submit-button-contact-html" accesskey="s">Submit</button>
                             </form>
