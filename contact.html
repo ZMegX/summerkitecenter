@@ -116,7 +116,7 @@ nav a:hover {
 .wrapper{
   display: flex;
   width:100%;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
   .container{
     display: flex;
@@ -317,12 +317,55 @@ aside > p {
   margin: 0.5rem;
 }
  }
+ @media only screen and (min-width: 768px) {
+  .wrapper{
+  display: flex;
+  width:100%;
+}
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  .element-img1-container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 10px;
 
+}
+   aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #7e5929;
+}
+ }
+ @media only screen and (min-width: 1025px) {
+  .wrapper{
+  display: grid;
+  grid-template-columns: 200px 200px 200PX;
+}
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #6c07f9;
+}
+ }
 
 
    </style>
     </head>
     <body>
+      <div class="wrapper">
                 <header>
                     <h1>Summer Kite Center School</h1>
                 </header>
@@ -346,8 +389,7 @@ aside > p {
                       }
                   </script>
                 </div>
-                <div class="wrapper">
-                    <div class="container">
+                <div class="container">
                       <fieldset class="fieldset-container">
                         <legend>Contact us!</legend>
                         <form action="/submit" method="POST">
@@ -380,7 +422,7 @@ aside > p {
                       <img src="./imagesupd/photo-contact-650.jpg" alt="Flowers" style="width:auto;">
                       </picture>
                       </div>
-                  </div>
-                </div>
+                    </div>
+           </div>
     </body>
 </html>
