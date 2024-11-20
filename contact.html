@@ -1,36 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="stylesheetgrid.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Kite Center School</title>
-</head>
-<body>
-    <header>
-        <h1>Summer Kite Center School</h1>
-    </header>
-    <div class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <!-- Hamburger icon bars -->
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        <nav>
-        <ul class="nav-links">
-          <li><a href="main.html">Home</a></li>
-        <li><a href="calendar/book.html">Book</a></li>
-        <li><a href="kitesurfschool/teacher.html">Teachers</a></li>
-        <li><a href="kitesurfschool/spot.html">KiteSurf Spot</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </nav>
-        <script>
-            function toggleMenu() {
-              document.querySelector('.nav-links').classList.toggle('active');
-            }
-          </script>
-        </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        a {
+text-decoration: none;
+}
+header{
+padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
+font-family: "canvas-inline", sans-serif;
+font-weight: 500;
+font-style: normal; 
+font-size: 1.75rem;
+}
+nav {
+  margin: 0;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #271719;
+}
+nav li {
+  margin: 0;
+  list-style: none;
+  font-family: "canvas-inline", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+nav a:link {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+#Accomodation-link{
+  font-style: italic;
+}
+nav a:visited {
+  color: #F2CF8D;
+}
+nav a:hover {
+  color: #e8c42a;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #271719;
+  transition: 0.3s;
+}
+p {
+  font-family: "new-zen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+ @media (max-width 320px) {
+    .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  .image-img1 {
+        display: none;
+    }
+
+  fieldset {
+    margin: 8px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    background-color: #EAEAEA;
+    font-family: Arial, sans-serif;
+    width: 420px;
+    padding: 1em;
+}
+label {
+    float: none;
+    display: block;
+}
+
+input, textarea {
+    margin-top: 10px;
+    display: block;
+}
+
+
+button[type="submit"] {
+    grid-column: 1 / 2;
+    width: 100%;
+    padding: 12px;
+}
+ }
+
+ @media (min-width: 400px) and (max-width: 700px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .element-img1-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    fieldset {
+        margin: 8px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr; /* 2-column grid layout for labels and inputs */
+        gap: 1em;
+        width: 500px;
+        background-color: #EAEAEA;
+        font-family: Arial, sans-serif;
+        padding: 2em;
+    }
+
+    label {
+        float: none;
+        display: grid;
+        grid-column: 1 / 1;
+    }
+
+    input, textarea {
+        margin-top: 10px;
+        display: grid;
+        grid-column: 2 / 2;
+    }
+
+    button[type="submit"] {
+        display: grid;
+        grid-column: 1 / 3; /* Span across the second column */
+        width: auto;
+        padding: 12px;
+    }
+}
+        @media (min-width: 700px) and (max-width: 1024px) {
+    .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;}     
+   
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .element-img1-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    fieldset {
+        margin: 8px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr; /* 2-column grid layout for labels and inputs */
+        gap: 1em;
+        width: 500px;
+        background-color: #EAEAEA;
+        font-family: Arial, sans-serif;
+        padding: 2em;
+    }
+
+    label {
+        float: none;
+        display: grid;
+        grid-column: 1 / 1;
+    }
+
+    input, textarea {
+        margin-top: 10px;
+        display: grid;
+        grid-column: 2 / 2;
+    }
+
+    button[type="submit"] {
+        display: grid;
+        grid-column: 1 / 3; /* Span across the second column */
+        width: auto;
+        padding: 12px;
+    }
+}
+   </style>
+    </head>
+    <body>
+                <header>
+                    <h1>Summer Kite Center School</h1>
+                </header>
+                <div class="navbar">
+                    <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    </div>
+                    <nav>
+                    <ul class="nav-links">
+                        <li><a href="./main.html">Home</a></li>
+                        <li><a href="./book.html">Book</a></li>
+                        <li><a href="./Kiteschool.html">Kiteschool</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="wrapper">
+                    <div class="container">
+                        <fieldset >
+                            <legend>Contact us!</legend>
+                            <form action="/submit" method="POST">
+                                <label for="first-name" id="first-name-label" accesskey="f">First Name:</label>
+                                <input type="text" id="first-name" name="first-name" aria-labelledby="first-name-label">
+                                
+                                <label for="last-name" id="last-name-label" accesskey="l">Last Name:</label>
+                                <input type="text" id="last-name" name="last-name" aria-labelledby="last-name-label" required>
+                                
+                                <label for="guest-email" id="guest-email-label" accesskey="e">Email:</label>
+                                <input type="email" id="guest-email" name="guest-email" aria-labelledby="guest-email-label" required>
+                                
+                                <label for="message" id="message-label" accesskey="m">Write your message:</label>
+                                <textarea name="message" id="message" aria-labelledby="message-label" cols="50" rows="5"></textarea>
+                                
+                                <button type="submit" id="submit-button-contact-html" accesskey="s">Submit</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="element-img1-container">
+                    <div class="element-img1">
+                        <img src="./images/DSC09849.jpg" class="image-img1" width="350px" height="auto"
+                        alt="Summer Kite Center school photo, with a kite on the beach in the front">
+                    </div> 
+                </div>
+    </body>
 </html>
