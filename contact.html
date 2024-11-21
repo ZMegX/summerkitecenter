@@ -55,6 +55,10 @@ nav a {
 }
 nav a:link {
   display: flex;
+  font-family: "grecian-light-face", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75em;
   gap: 1rem;
   color: black;
 }
@@ -125,11 +129,15 @@ nav a:hover {
     justify-content: flex-end;
   }
   .element-img1-container{
+  display: none;
+}
+.element-img2-container{
   display: flex;
   width: 100%;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
+
  
   fieldset {
     margin-top: 1rem;
@@ -172,7 +180,7 @@ button[type="submit"] {
 h4 {
   display: none;
 }
- }
+}
 
  @media only screen and (min-width: 482px) {
   body {
@@ -203,8 +211,8 @@ nav ul {
 nav li {
   margin: 0;
   list-style: none;
-  font-family: "canvas-inline", sans-serif;
-  font-weight: 200;
+  font-family: "grecian-light-face", serif;
+  font-weight: 400;
   font-style: normal;
   display: flex;
 }
@@ -216,7 +224,7 @@ nav a:link {
   display: flex;
   gap: 1rem;
   color: black;
-  font-size: 2.5em;
+  font-size: 0.75em;
 }
 #Accomodation-link{
   font-style: italic;
@@ -269,7 +277,13 @@ nav a:hover {
     grid-column: 1 / 4;
     grid-row: 5 / 6;
     padding: 10px;
-
+  }
+  .element-img2-container{
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 /3 ;
+}
+ 
 }
  
 fieldset {
@@ -321,7 +335,7 @@ aside {
 aside > p {
   margin: 0.5rem;
 }
- }
+ 
  @media only screen and (min-width: 768px) {
   .wrapper{
   display: grid;
@@ -423,6 +437,13 @@ aside {
                   </script>
                 </div>
                 <div class="container">
+                  <div class="element-img2-container">
+                    <div class="element-img2">
+                    <picture>
+                    <source media="(min-width:550px)" srcset="./imagesupd/lagoon-oval-550p.png">
+                    <source media="(min-width:350px)" srcset="./imagesupd/lagoon-oval-350p.png">
+                    <img src="./imagesupd/lagoon-oval-550p.png" alt="photo of the lagoon, Paje Beach, Zanzibar" style="width:auto;">
+                    </picture>
                       <fieldset class="fieldset-container">
                         <legend>Write us!</legend>
                         <form action="/submit" method="POST">
@@ -441,24 +462,22 @@ aside {
                             <button type="submit" id="submit-button-contact-html" accesskey="s">Submit</button>
                         </form>
                       </fieldset>
-                      <aside>
-                        <h4>We strive to create 
-                          the perfect kitesurf trip—send us a message, 
-                          and let’s make it happen!</h4>
-                      </aside>
                       </div>
                       <div class="element-img1-container">
-                      <div class="element-img1">
-                      <picture>
-                      <source media="(min-width:650px)" srcset="./imagesupd/photo-contact-650.jpg">
-                      <source media="(min-width:465px)" srcset="./imagesupd/photo-contact-465.jpg">
-                      <img src="./imagesupd/photo-contact-650.jpg" alt="Flowers" style="width:auto;">
-                      </picture>
-                      </div>
+                          <div class="element-img1">
+                          <picture>
+                            <source media="(min-width:650px)" srcset="./imagesupd/photo-contact-650.jpg">
+                            <source media="(min-width:465px)" srcset="./imagesupd/photo-contact-465.jpg">
+                            <img src="./imagesupd/photo-contact-650.jpg" alt="Front photo of the kite shcool, with yellow flags, on the beach" style="width:auto;">
+                          </picture>
+                          <aside>
+                            <h4>We strive to create 
+                              the perfect kitesurf trip—send us a message, 
+                              and let’s make it happen!</h4>
+                          </aside>
+                          </div>
                     </div>
+                    
            </div>
     </body>
 </html>
-<footer>
-  <p>2024 Summer Kite Center</p>
-</footer>
