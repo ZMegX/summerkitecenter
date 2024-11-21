@@ -20,6 +20,7 @@ text-decoration: none;
 }
 header{
   display: flex;
+  justify-content: center;
   padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
   font-family: "marydale", sans-serif;
 font-weight: 400;
@@ -128,9 +129,6 @@ nav a:hover {
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
-  .element-img1-container{
-  display: none;
-}
 .element-img2-container{
   display: flex;
   width: 100%;
@@ -431,15 +429,6 @@ aside {
                   </script>
                 </div>
                 <div class="container">
-                  <div class="element-img2-container">
-                    <div class="element-img2">
-                      <picture>
-                      <source media="(min-width:550px)" srcset="./imagesupd/lagoon-oval-550p.png">
-                      <source media="(min-width:465px)" srcset="./imagesupd/lagoon-oval-465p.png">
-                      <img src="./imagesupd/lagoon-oval-550p.png" alt="photo of the lagoon, Paje Beach, Zanzibar" style="width:auto;">
-                      </picture>
-                    </div>
-                  </div>
                       <fieldset class="fieldset-container">
                         <legend>Write us!</legend>
                         <form action="/submit" method="POST">
@@ -458,7 +447,17 @@ aside {
                             <button type="submit" id="submit-button-contact-html" accesskey="s">Submit</button>
                         </form>
                       </fieldset>
+                  </div>
+                  <div class="element-img2-container">
+                    <div class="element-img2">
+                      <picture>
+                      <source media="(min-width:650px)" srcset="./imagesupd/lagoon-oval-650p.png">
+                      <source media="(min-width:465px)" srcset="./imagesupd/lagoon-oval-465p.png">
+                      <img src="./imagesupd/lagoon-oval-550p.png" alt="photo of the lagoon, Paje Beach, Zanzibar" style="width:auto;">
+                      </picture>
                     </div>
                   </div>
+               </div>
+        </div>
     </body>
 </html>
