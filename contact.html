@@ -23,10 +23,10 @@ header{
   justify-content: center;
   padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
   font-family: "marydale", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 0.5em;
-color: #44A6A6;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: #44A6A6;
 }
 img {
   max-width: 100%;
@@ -132,10 +132,15 @@ nav a:hover {
 .element-img2-container{
   display: flex;
   width: 100%;
+  height: auto;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 
+.element-img2{
+  width: 100%;
+  height: auto;
+}
  
   fieldset {
     margin-top: 1rem;
@@ -172,12 +177,7 @@ button[type="submit"] {
   margin-top: 10px;
     padding: 12px;
 }
-.aside {
-  display: none;
-}
-h4 {
-  display: none;
-}
+
 }
 
  @media only screen and (min-width: 482px) {
@@ -204,7 +204,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #FCA000;
+  background-color: #44A6A6;
 }
 nav li {
   margin: 0;
@@ -213,6 +213,8 @@ nav li {
   font-weight: 400;
   font-style: normal;
   display: flex;
+  background-color: #44A6A6;
+
 }
 nav a {
   text-decoration: none;
@@ -278,8 +280,9 @@ nav a:hover {
   }
   .element-img2-container{
   display: grid;
-  grid-column: 1 / 2;
-  grid-row: 2 /3 ;
+  width: 100%;
+  object-fit: contain;
+  grid-row: 2;
 }
  
 }
@@ -453,7 +456,7 @@ aside {
                       <picture>
                       <source media="(min-width:650px)" srcset="./imagesupd/lagoon-oval-650p.png">
                       <source media="(min-width:465px)" srcset="./imagesupd/lagoon-oval-465p.png">
-                      <img src="./imagesupd/lagoon-oval-550p.png" alt="photo of the lagoon, Paje Beach, Zanzibar" style="width:auto;">
+                      <img src="./imagesupd/lagoon-oval-650p.png" alt="photo of the lagoon, Paje Beach, Zanzibar" style="width:auto;">
                       </picture>
                     </div>
                   </div>
