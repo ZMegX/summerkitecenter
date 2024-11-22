@@ -192,6 +192,11 @@ p {
   animation: elementor-widget-text-animation 2200ms infinite;
 
 }
+.h4{
+  display: flex;
+  justify-content: space-around;
+
+}
 footer{
   display: flex;
 }
@@ -406,7 +411,210 @@ footer{
 
 
 @media (min-width: 768px) {
+  body {
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+  }
+  .main-1-wrapper{
+    display: grid;
+    grid-template-columns: 300px repeat(5, 100px);
+    grid-template-rows: 200px 200px 350px auto;
+    padding: 10px;
+}
+  header{
+    padding-top: 0.5rem;
+    font-family: "marydale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 7;
+    color: #44A6A6;
+  }
+  img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #44A6A6;
+  }
+  nav li {
+    margin: 0;
+    list-style: none;
+    font-family: "grecian-light-face", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    background-color: #44A6A6;
+  
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  nav a:link {
+    display: flex;
+    gap: 1rem;
+    color: black;
+    font-size: 0.80em;
+  }
+  nav a:visited {
+    color: #C683C3;
+  }
+  nav a:hover {
+    color: #C683C3;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #271719;
+    transition: 0.3s;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+
+p {
+  font-family: "new-zen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.element-item-imgkiteschool-container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  grid-row: 2 / 3;
+  grid-column: 3 / 7;
+
+}
+.elementor-widget-container-main-1 {
+  margin-top: 3.0rem;
+  display: flex;
+  grid-row: 3;
+  grid-column: 1 / 4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;  /* background-image: url(./images/Flag_of_Zanzibar.png); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  font-family: "grecian-light-face", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.30rem;
+}
+
+@keyframes elementor-widget-text-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.elementor-widget-animated-text {
+  color: #e8c42a;
+  animation-name: elementor-widget-text-animation;
+  animation: elementor-widget-text-animation 2200ms infinite;
+
+}
+.google-reviews{
+  grid-row: 4 / 5;
+  grid-column: 1 / 5;
+
+}
+.element-item-star-container{
+  display: flex;
+
+}
+.element-item-star{
+  display: flex;
+  margin-top: 2rem;
+  width: 2rem;
+  height: 100%;
+
+}
+.element-item-link1-Google-container{
+ display: none;
+
+}
+.element-item-link1-Google {
+  padding-top: 10px;
+  display: flex;        /* none if not working */
+  flex-direction: row;
+  
+}
+.element-item-link1-container{
+  display: flex;
+  grid-row: 6;
+  justify-content: space-evenly;
+  grid-column: 1 / 7;
+
+}
+.item-link2-kitesurf-lessons{
+  display: flex;
+
+}
+.presentation-main-teacher-p-001-container{
+  grid-row: 8 / 9;
+  grid-column: 1 / 6;
+
+}
+.element-item-link-4-5-container{
+  grid-row: 9 / 10;
+    grid-column: 1 / 6;
+
+}
+.element-main-accomodation-container{
+  grid-row: 10 / 11;
+
+}
+h2{
+  grid-row: 10 / 11;
+}
+}
+.paragraph-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  grid-row: 11 / 12;
+  grid-column: 1 / 2;
  
+}
+/* Styling for the paragraph box */
+
+
+
+footer{
+  display: flex;
 }
 
 @media (min-width: 1024px){
