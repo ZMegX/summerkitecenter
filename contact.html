@@ -182,7 +182,7 @@ button[type="submit"] {
 
 }
 
- @media only screen and (min-width: 482px) {
+ @media only screen and (min-width: 465px) {
   body {
   align-items: center;
   justify-content: center;
@@ -269,23 +269,17 @@ nav a:hover {
   padding: 10px;
 }
   .fieldset-container{
-    display: grid;
-    grid-column: 1 / 2;
+    display: flex;
+    grid-column: 2 / 6;
     grid-row: 2 / 3;
     padding: 10px;
   }
   .element-img2-container{
-    display: grid;
-    grid-column: 1 / 4;
+    display: flex;
+    grid-column: 3 / 7;
     grid-row: 5 / 6;
     padding: 10px;
   }
-  .element-img2-container{
-  display: grid;
-  width: 100%;
-  object-fit: contain;
-  grid-row: 2;
-}
  
 }
  
@@ -342,8 +336,8 @@ aside > p {
  @media only screen and (min-width: 768px) {
   .wrapper{
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(4, 220px );
+  grid-template-rows: 180px 220px auto;
+  grid-template-columns: 350px auto;
   padding: 10px;
   }
   .container{
@@ -372,35 +366,34 @@ header{
  }
  @media only screen and (min-width: 1025px) {
   .wrapper{
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, 125px);
-  padding: 10px;;
-}
+    display: grid;
+    grid-template-rows: 180px 50px 450px repeat(2, auto);
+        padding: 10px;
+        grid-template-columns: auto;
+        width: 100%;
+        height: 100vw;}
 header{
+  display: flex;
   padding-top: 0.5rem;
-  font-family: "marydale", sans-serif;
+  font-family: "marysdale", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.75rem;
   grid-column: 1 / 9;
   color: #44A6A6;
 }
-aside {
-  width: 40%;
-  padding-left: 0.5rem;
-  margin-left: 0.5rem;
-  float: right;
-  box-shadow: inset 5px 0 5px -5px #29627e;
-  font-style: italic;
-  color: #6c07f9;
-}
-.element-img1-container{
-  display: grid;
-  grid-row: ;
-  grid-column: ;
-  padding: 10px;
 
+.element-img2-container{
+  display: flex;
+  grid-row: 2 / 3;
+  grid-column:  ;
+
+}
+.fieldset-container{
+  display: flex;
+  justify-content: flex-start;
+  grid-column: 1;
+  grid-row: 3 / 4;
 }
  }
  
@@ -410,29 +403,29 @@ aside {
     </head>
         <body>
           <div class="wrapper">
-                <header>
-                    <h1>Summer Kite Center School</h1>
-                </header>
-                <div class="navbar">
-                    <div class="menu-icon" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    </div>
-                    <nav>
-                    <ul class="nav-links">
-                        <li><a href="./main.html">Home</a></li>
-                        <li><a href="./book.html">Book</a></li>
-                        <li><a href="./Kiteschool.html">Kiteschool</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                    </nav>
-                    <script>
-                      function toggleMenu() {
-                          document.querySelector('.nav-links').classList.toggle('active');
-                      }
-                  </script>
-                </div>
+                      <header>
+                          <h1>Summer Kite Center School</h1>
+                      </header>
+                      <div class="navbar">
+                          <div class="menu-icon" onclick="toggleMenu()">
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          </div>
+                          <nav>
+                          <ul class="nav-links">
+                              <li><a href="./main.html">Home</a></li>
+                              <li><a href="./book.html">Book</a></li>
+                              <li><a href="./Kiteschool.html">Kiteschool</a></li>
+                              <li><a href="./contact.html">Contact</a></li>
+                          </ul>
+                          </nav>
+                          <script>
+                            function toggleMenu() {
+                                document.querySelector('.nav-links').classList.toggle('active');
+                            }
+                        </script>
+                      </div>
                     <div class="fieldset-container">
                           <fieldset >
                             <legend>Write us!</legend>
@@ -456,9 +449,9 @@ aside {
                         <div class="element-img2-container">
                           <div class="element-img2">
                             <picture>
-                            <source media="(min-width:650px)" srcset="./imagesupd/lagoon-oval-650p.png">
-                            <source media="(min-width:465px)" srcset="./imagesupd/lagoon-oval-465p.png">
-                            <img src="./imagesupd/lagoon-oval-650p.png" alt="photo of the lagoon, Paje Beach, Zanzibar" style="width:auto;">
+                              <source media="(min-width:650px)" srcset="imagesupd/lagoon-oval-650p.png">
+                              <source media="(min-width:465px)" srcset="imagesupd/lagoon-oval-465p.png">
+                              <img src="imagesupd/lagoon-oval-650p.png" alt="Photo of the lagoon" style="width:100%;">
                             </picture>
                           </div>
                         </div>
