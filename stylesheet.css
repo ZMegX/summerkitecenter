@@ -210,6 +210,7 @@ footer{
     font-weight: 400;
     font-style: normal;
     font-size: 1.75rem;
+    grid-row: 1 / 2;
     grid-column: 1 / 5;
     color: #44A6A6;
   }
@@ -277,158 +278,92 @@ footer{
     text-align: center;
     z-index: 1000;
   }
-
-  .elementor-widget-container-main-1 {
-    margin-top: 3.0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;  /* background-image: url(./images/Flag_of_Zanzibar.png); */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    font-family: "grecian-light-face", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.25rem;
-  }
-  
-  @keyframes elementor-widget-text-animation {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  
-  .elementor-widget-animated-text {
-    color: #e8c42a;
-    animation-name: elementor-widget-text-animation;
-    animation: elementor-widget-text-animation 2200ms infinite;
-  
-  }
-
   .main-1-wrapper{
   display: grid;
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: 220px auto 220px auto ;
   padding: 10px;
 }
-.element-item-img1-container {
+p {
+  font-family: "new-zen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.element-item-imgkiteschool-container{
+  display: flex;
+  grid-row: 2 / 3;
+  grid-column: 2 / 5;
+}
+.element-item-star{
+  display: flex;
+  margin-top: 2rem;
+  width: 2rem;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+.paragraph-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* border: 2px solid #ddd; */
+  border-radius: 8px;
+  /* padding: 15px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+.paragraph-main-accomodation{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.kiteschool-presentation-main-test {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+/* Styling for the paragraph box */
+
+.elementor-widget-container-main-1 {
   margin-top: 3.0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  
-}
- .elementor-widget-container-jet{
-  display: flex;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
-} 
-.elementor-widget-container {
-  display: grid;
-  justify-content: center;
-}
-.element-item-star-container{
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
-}
-.element-item-link1-Google-container{
-  width: 90%;
-  max-width: 600px;
-  border-radius: 8px;
-}
-.element-item-link1-container{
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
-}
-.element-main-accomodation-container{
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
-}
-.element-item-img1{
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
-}
-.element-item-link-4-5{
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
-}
-.element-img4-teacher-photo {
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.element-item-link1{
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-top: 2rem;
-}
-.element-item-link1-Google{
-  display: flex;
-  margin-top: .5rem;
-}
-.element-item-link-4-5{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-}
-
-/* Container styling */
-.container {
-  margin-top: 2rem;
-  padding: 20px;
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-/* Specific styling for the image box */
-.image-box {
-  background-image: url(./images/teacher-photo.jpg);
+  max-width: 350px;  /* background-image: url(./images/Flag_of_Zanzibar.png); */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-family: "grecian-light-face", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
 }
 
-.image-item-img1 {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+@keyframes elementor-widget-text-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
-.image-item-star {
+.elementor-widget-animated-text {
+  color: #e8c42a;
+  animation-name: elementor-widget-text-animation;
+  animation: elementor-widget-text-animation 2200ms infinite;
+
+}
+footer{
   display: flex;
-  width: 2rem;
-}
-.item-link1-Google{
-
-}
 }
 
+}
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
@@ -707,7 +642,6 @@ grid-auto-rows: max-content;
 }
 
 .element-item-img1 {
-  background-image: url(./images/DSC09849.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
