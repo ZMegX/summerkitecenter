@@ -164,8 +164,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  /* background-image: url(./images/Flag_of_Zanzibar.png); */
+  max-width: 350px;  /* background-image: url(./images/Flag_of_Zanzibar.png); */
   background-size: cover;
   background-position: center;
   border: 2px solid #e6354a;
@@ -190,6 +189,9 @@ p {
   animation-name: elementor-widget-text-animation;
   animation: elementor-widget-text-animation 2200ms infinite;
 
+}
+footer{
+  display: flex;
 }
 @media only screen and (max-width: 767px) {
   .nav-links {
