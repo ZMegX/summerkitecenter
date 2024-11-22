@@ -1,15 +1,16 @@
 @media only screen and  (max-width: 481px) {
   body {
-    align-items: center;
+    width: 100%;
     justify-content: center;
     background-color: #f0f0f0;
+
   }
 html, body {
 }
 html {
   box-sizing: border-box;
 }
-        a {
+a {
 text-decoration: none;
 }
 header{
@@ -195,6 +196,44 @@ p {
 .h4{
   display: flex;
   justify-content: space-around;
+
+}
+.h2{
+  display: flex;
+  justify-content: space-around;
+
+}
+.element-main-accomodation-container{
+display: flex;
+justify-content: center;
+
+}
+.item-link2-kitesurf-lessons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+
+}
+.item-link3-contact{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+
+}
+.item-link4-about-us{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+
+}
+.item-link5-contact{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+
+}
+.paragraph-box{
+  display: flex;
 
 }
 footer{
