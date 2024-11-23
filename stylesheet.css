@@ -208,6 +208,16 @@ p {
 .h2{
   display: flex;
   justify-content: center ;
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+.h3{
+  display:flex;
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 
 }
 .element-main-accomodation-container{
@@ -379,8 +389,12 @@ p {
 h2 {
   grid-row: 7 / 8;
   grid-column: 2 / 6;
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 
 }
+
 .elementor-widget-container-main-1 {
   margin-top: 3.0rem;
   display: flex;
@@ -466,8 +480,12 @@ h2 {
   grid-row: 10 / 11;
 
 }
-h2{
-  grid-row: 10 / 11;
+
+h3{
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
 }
 }
 .paragraph-box {
@@ -510,6 +528,15 @@ p {
 .h2{
   display: flex;
   justify-content: center ;
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+h3{
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 
 }
 .element-main-accomodation-container{
@@ -751,6 +778,9 @@ h2{
   grid-row: 7 / 8;
   grid-column: 3 / 7;
   justify-content: center;
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 
 }
 .element-img1-container{
@@ -786,12 +816,16 @@ h2{
 }
 h3{
   display: flex  ;
-      grid-row: 10 / 11;
-      grid-column: 1 / 3;
-      align-items: center;
-      justify-content: center;
+  grid-row: 10 / 11;
+  grid-column: 1 / 3;
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
 
 }
+
 
 
 .paragraph-box2 {
@@ -1006,8 +1040,17 @@ footer{
 
 }
 h2 {
-  grid-row: 7 / 8;
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  grid-row: 10 / 11;
   grid-column: 2 / 4;
+
+}
+h3{
+  font-family: "short-films", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 
 }
 .paragraph-box {
@@ -1032,9 +1075,7 @@ h2 {
   grid-row: 10 / 11;
 
 }
-h2{
-  grid-row: 10 / 11;
-}
+
 }
 
 /* Styling for the paragraph box */
