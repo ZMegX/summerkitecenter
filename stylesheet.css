@@ -645,12 +645,6 @@ footer{
     z-index: 1000;
   }
 
-p {
-  font-family: "new-zen", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 .element-item-imgkiteschool-container{
   display: flex;
   width: 100%;
@@ -709,15 +703,11 @@ p {
 
 }
 .element-item-link1-Google-container{
- display: none;
+  display: flex  ;
+  padding-bottom: 10px;
 
 }
-.element-item-link1-Google {
-  padding-top: 10px;
-  display: flex;        /* none if not working */
-  flex-direction: row;
-  
-}
+
 .element-item-link1-container{
   display: flex;
   grid-row: 6;
@@ -729,37 +719,79 @@ p {
   display: flex;
 
 }
-.presentation-main-teacher-p-001-container{
-  grid-row: 8 / 9;
-  grid-column: 1 / 6;
+.item-link3-contact {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
 
 }
-.element-item-link-4-5-container{
+.item-link4-about-us {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+
+}
+
+h2{
+  display: flex;
+  grid-row: 7 / 8;
+  grid-column: 3 / 7;
+  justify-content: center;
+
+}
+.element-img1-container{
+  display: flex;
+  grid-row: 7 / 9;
+  grid-column: 1 / 3;
+
+}
+.paragraph-box {
+  border-radius: 8px;
+  grid-row: 8 / 9;
+  grid-column: 3 / 7;
+  display: flex;
+  height: min-content;
+  align-content: center;
+  flex-wrap: wrap;
+ 
+}
+.item-link5-contact{
+  display: flex  ;
+ justify-content: flex-start;
+  padding: 20px;
   grid-row: 9 / 10;
-    grid-column: 1 / 6;
+  grid-column: 2 / 5
 
 }
 .element-main-accomodation-container{
+  grid-row: 10 / 12;
+        grid-column: 3 / 7;
+        padding: 20px;
   grid-row: 10 / 11;
 
 }
-h2{
-  grid-row: 10 / 11;
+h3{
+  display: flex  ;
+      grid-row: 10 / 11;
+      grid-column: 1 / 3;
+      align-items: center;
+      justify-content: center;
+
 }
-}
-.paragraph-box {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  grid-row: 11 / 12;
-  grid-column: 1 / 2;
- 
-}
+
+
 .paragraph-box2 {
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  grid-row: 12 / 13;
-  grid-column: 2 / 4;
- 
+    border-radius: 8px;
+    grid-row: 11 / 12;
+    grid-column: 1 / 3;
+    height: min-content;
+}
+footer{
+  display: flex;
+  grid-row: 12 /13;
+
+}
 }
 /* Styling for the paragraph box */
 
