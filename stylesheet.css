@@ -399,6 +399,62 @@ margin: 0.5rem;
 .day:hover {
   background-color: #A62317;
 }
+/* kiteschool.html */
+.wrapper-hiteschool-html{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr ;
+}
+.h2-kiteschool-html{
+  display: flex;
+  justify-content: center;
+  font-family: "short-films", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #A62317;
+  font-size: 1em;
+
+}
+.td-price-kiteschool-html{
+  text-align: center;
+}
+td {
+  font-family: "obviously-narrow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+
+}
+.img1-container-kiteschool-html {
+  display: flex;
+}
+.img1-kiteschool-html{
+  display: flex;
+
+}
+.h2-kiteschool-html{
+  display: flex;
+
+}
+.img2-container-kiteschool-html{
+  display: flex;
+
+}
+.img2-kiteschool-html{
+  display: flex;
+
+
+}
+.img3-container-kiteschool-html{
+  display: flex;
+
+
+}
+.img3-kiteschool-html{
+  display: flex;
+
+
+}
 
 }
 @media only screen and (min-width: 465px) {
@@ -858,6 +914,63 @@ aside > p {
 .day:hover {
   background-color: #A62317;
 }
+/* kiteschool.html */
+.wrapper-kiteschool-html{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr ;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+.h2-kiteschool-html{
+  display: flex;
+  justify-content: center;
+  font-family: "short-films", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #A62317;
+  font-size: 1em;
+
+}
+.td-price-kiteschool-html{
+  text-align: center;
+}
+td {
+  font-family: "obviously-narrow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+
+}
+.img1-container-kiteschool-html {
+  display: flex;
+}
+.img1-kiteschool-html{
+  display: flex;
+
+}
+.h2-kiteschool-html{
+  display: flex;
+
+}
+.img2-container-kiteschool-html{
+  display: flex;
+
+}
+.img2-kiteschool-html{
+  display: flex;
+
+
+}
+.img3-container-kiteschool-html{
+  display: flex;
+
+
+}
+.img3-kiteschool-html{
+  display: flex;
+
+}
 
 }
 @media (min-width: 768px) {
@@ -1233,7 +1346,89 @@ footer{
 .day:hover {
   background-color: #A62317;
 }
+/* kiteschool.html */
+.wrapper-hiteschool-html{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px auto;
+  align-items: center;
 
+}
+td {
+  font-family: "obviously-narrow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+
+}
+.img1-container-kiteschool-html {
+  display: flex;
+  justify-content: center;
+}
+.img1-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+}
+.h2-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+}
+.img2-container-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+
+}
+.img2-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+
+
+}
+.img3-container-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+
+
+}
+.img3-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+}
+.table1-container{
+  display: flex;
+  justify-content: center;
+
+}
+.offer2-intermediate-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+
+}
+.offer3-advanced-kiteschool-html{
+  display: flex;
+  justify-content: center;
+
+}
+.h2-kiteschool-html{
+  display: flex;
+  justify-content: center;
+  font-family: "short-films", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #A62317;
+  font-size: 1em;
+
+}
+.td-price-kiteschool-html{
+  text-align: center;
+}
 }
 @media (min-width: 1024px){
   .main-1-wrapper {
@@ -1498,11 +1693,13 @@ footer{
 /* Contact.html */
 .wrapper-contact-html{
   display: grid;
-  grid-template-rows: 180px 50px 450px repeat(2, auto);
-      padding: 10px;
-      grid-template-columns: auto;
-      width: 100%;
-      height: 100vw;}
+  grid-template-rows: 180px 50px 450px;
+  padding: 10px;
+  grid-template-columns: auto;
+  width: 100%;
+  height: 100vw;
+    
+    }
 
 .header-contact-html{
   display: flex;
@@ -1535,6 +1732,8 @@ grid-row: 3 / 4;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
+  width: 100%;
+  height: 100vw;
 
 }
 .calendar-container-book-html {
@@ -1601,5 +1800,26 @@ grid-row: 3 / 4;
 .day:hover {
   background-color: #A62317;
 }
-
+/* kiteschool.html */
+.wrapper-hiteschool-html {
+  display: grid;
+  grid-template-rows: 150px auto;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.header-kiteschool-html{
+  display: flex;
+          justify-content: flex-start;
+          padding-top: 0.5rem;
+          font-family: "short-films", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          color: #A62317;
+          font-size: 1.75rem;
+          grid-row: 1 / 2;
+          grid-column: 1 / 3;
+          flex-direction: column-reverse;
+}
 }

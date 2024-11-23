@@ -5,137 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-.tabs {
-    display: flex;
-    flex-direction: column; /* Stack content and buttons vertically */
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-/* Hide Radio Buttons */
-input[type="radio"] {
-    display: none;
-}
-
-/* Tab Buttons */
-.tab-buttons {
+  font-family: Arial, sans-serif;
   display: flex;
-    border-top: 2px solid #ddd; /* Separate buttons from content */
-    background: #fff;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.day-book-html{
+  text-decoration: none;
 }
 
-.tab-button {
-  flex: 1; /* Equal width for buttons */
-    padding: 10px 0;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    color: #333;
-    border: none;
-    background: none;
-    border-top: 2px solid transparent;
-    transition: color 0.3s, border-color 0.3s;
+.wrapper-book-html{
+  grid-template-columns: 1fr;
+
 }
-.tab-button:hover,
-.tab-button:focus {
-    color: #0056b3;
+.h1-book-html {
+  margin-top: 20px;
 }
 
-
-input[type="radio"]:checked + .tab-button {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin-top: 20px;
 }
 
-/* Tab Content */
-.tab-content .tab-panel {
-    display: none;
+.month {
+  grid-column: span 7;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-input[type="radio"]:nth-of-type(1):checked ~ .tab-content #content1,
-input[type="radio"]:nth-of-type(2):checked ~ .tab-content #content2,
-input[type="radio"]:nth-of-type(3):checked ~ .tab-content #content3 {
-    display: block;
-    animation: fadeIn 0.3s ease-in-out;
+.day-label, .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
 }
 
-/* Fade-in effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.day-label {
+  background-color: #f0f0f0;
 }
-.image-box {
-  background-image: url(./images/teacher-photo.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 600px;
-  height: auto;
-  border-radius: 8px;
+
+.day {
+  background-color: #e0f7fa;
+  text-decoration: none;
+  color: black;
 }
+
+.day:hover {
+  background-color: #80deea;
+}
+
 
   </style>
 </head>
 <body>
-    <div class="tabs">
-        <!-- Radio Buttons (Hidden) -->
-        <input type="radio" id="tab1" name="tab-group" checked>
-        <input type="radio" id="tab2" name="tab-group">
-        <input type="radio" id="tab3" name="tab-group">
-
-        <!-- Tab Content -->
-        <div class="tab-content">
-            <div class="tab-panel" id="content1">
-              <div class="element-img4-teacher-photo">
-              <img src="./images/teacher-photo.png" class="image-box"
-              alt="Photo of a teacher from the team, on Paje Beach, in zanzibar, with a sailing boat and blue lagoon">
-            </div>
-              <div class="paragraph-box">
-              At Zanzibar's first and finest kitesurf school, 
-              surrender to the ultimate kitesurfing experience.
-               Enter a world of amazing landscape, professional training, 
-               and first-rate equipment. 
-               Perfecting the art of kitesurfing
-               on Paje Beach, renowned for its 
-              exceptional circumstances and
-                 unmatched beauty, we have been since 2016.
-                  Our love for this exciting
-                  sport motivates us to offer kitesurfers 
-                  of any ability, from beginners to expert, the greatest service.</div>
-            </div>
-            <div class="tab-panel" id="content2">
-              <div class="element-main-accomodation-container">
-            <img src="./images/znzflag.png" class="img-accomodation"
-            alt="Zanzibar flag">
-            </div>
-              <div class="paragraph-main-accomodation">Whether you’re seeking a romantic getaway, 
-                a family vacation, or a rejuvenating escape, 
-                Paje Beach Paradise invites you to experience 
-                the magic of a beachfront paradise in Zanzibar. 
-                Let us be your gateway to endless summer
-                 memories and unparalleled relaxation.</div>
-                   </div>
-            <div class="tab-panel" id="content3">Any questions send us a mail at <a href="mailto:kynoku.mp@gmail.com">Summer kite center</a> </div>
-        </div>
-                <!-- Tab Navigation -->
-                <div class="tab-buttons">
-                  <label for="tab1" class="tab-button">KITESURF SCHOOL</label>
-                  <label for="tab2" class="tab-button">It's time, change your DAY</label>
-                  <label for="tab3" class="tab-button">Contact</label>
-              </div>
+  <table>
+    <tr>
+      <td><h1 class="h1-book-html">Booking Calendar</h1>
+  <div class="calendar">
+    <div class="month">
+      <span>November 2023</span>
     </div>
+      
+    </td>
+      <td><div class="calendar-book-html"></div>
+    <h1>Request to Book</h1></td>
+    </tr>
+    <tr>
+      <td><div class="day-label-book-html">Sun</div>
+      <div class="day-label-book-html">Mon</div>
+      <div class="day-label-book-html">Tue</div>
+      <div class="day-label-book-html">Wed</div>
+      <div class="day-label-book-html">Thu</div>
+      <div class="day-label-book-html">Fri</div>
+      <div class="day-label-book-html">Sat</div>
+
+      <a href="form.html?date=null" class="day-book-html"></a>
+      <a href="form.html?date=null" class="day-book-html"></a>
+      <a href="form.html?date=null" class="day-book-html"></a>
+      <a href="form.html?date=null" class="day-book-html"></a>
+      <a href="form.html?date=null" class="day-book-html"></a>
+      <a href="form.html?date=2023-11-01" class="day-book-html">1</a>
+      <a href="form.html?date=2023-11-02" class="day-book-html">2</a>
+      <a href="form.html?date=2023-11-03" class="day-book-html">3</a>
+      <a href="form.html?date=2023-11-04" class="day-book-html">4</a>
+      <a href="form.html?date=2023-11-05" class="day-book-html">5</a>
+      <a href="form.html?date=2023-11-06" class="day-book-html">6</a>
+      <a href="form.html?date=2023-11-07" class="day-book-html">7</a>
+      <a href="form.html?date=2023-11-08" class="day-book-html">8</a>
+      <a href="form.html?date=2023-11-09" class="day-book-html">9</a>
+      <a href="form.html?date=2023-11-10" class="day-book-html">10</a>
+      <a href="form.html?date=2023-11-11" class="day-book-html">11</a>
+      <a href="form.html?date=2023-11-12" class="day-book-html">12</a>
+      <a href="form.html?date=2023-11-13" class="day-book-html">13</a>
+      <a href="form.html?date=2023-11-14" class="day-book-html">14</a>
+      <a href="form.html?date=2023-11-15" class="day-book-html">15</a>
+      <a href="form.html?date=2023-11-16" class="day-book-html">16</a>
+      <a href="form.html?date=2023-11-17" class="day-book-html">17</a>
+      <a href="form.html?date=2023-11-18" class="day-book-html">18</a>
+      <a href="form.html?date=2023-11-19" class="day-book-html">19</a>
+      <a href="form.html?date=2023-11-20" class="day-book-html">20</a>
+      <a href="form.html?date=2023-11-21" class="day-book-html">21</a>
+      <a href="form.html?date=2023-11-22" class="day-book-html">22</a>
+      <a href="form.html?date=2023-11-23" class="day-book-html">23</a>
+      <a href="form.html?date=2023-11-24" class="day-book-html">24</a>
+      <a href="form.html?date=2023-11-25" class="day-book-html">25</a>
+      <a href="form.html?date=2023-11-26" class="day-book-html">26</a>
+      <a href="form.html?date=2023-11-27" class="day-book-html">27</a>
+      <a href="form.html?date=2023-11-28" class="day-book-html">28</a>
+      <a href="form.html?date=2023-11-29" class="day-book-html">29</a>
+      <a href="form.html?date=2023-11-30" class="day-book-html">30</a>
+   </td>
+      <td><div class="booking-form">
+    <form action="submit_booking.html" method="get">
+      <label for="date">Selected Date:</label>
+      <input type="text" id="date" name="date" value="" readonly>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Request Booking</button>
+    </form></td>
+    </tr>
+  </table>
 </body>
 </html>
