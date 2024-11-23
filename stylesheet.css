@@ -651,7 +651,13 @@ footer{
     text-align: center;
     z-index: 1000;
   }
-
+  p {
+    font-family: "obviously-narrow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+  
+  }
 .element-item-imgkiteschool-container{
   display: flex;
   width: 100%;
@@ -899,11 +905,13 @@ footer{
     z-index: 1000;
   }
 
-p {
-  font-family: "new-zen", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+  p {
+    font-family: "obviously-narrow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+  
+  }
 
 .element-item-imgkiteschool-container{
   display: flex  ;
