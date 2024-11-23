@@ -455,8 +455,8 @@ h2{
 .paragraph-box2 {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
-  grid-row: 13 / 14;
-  grid-column: 2 / 4;
+  grid-row: 12 / 13;
+  grid-column: 6 / 9;
  
 }
 /* Styling for the paragraph box */
@@ -844,14 +844,13 @@ p {
   grid-row: 6 /7 ;
   justify-content: space-around;
   grid-column: 1 / 9;
-  padding: 1.5em;
 
 }
-.element-item-link1-Google {
-  padding-top: 10px;
-  display: flex;        /* none if not working */
-  flex-direction: row;
-  
+.google-reviews{
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .element-item-link1-container{
