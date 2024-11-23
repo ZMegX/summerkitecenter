@@ -1078,8 +1078,10 @@ a{
  }
 
 .element-main-accomodation-container{
-  grid-row: 10 / 13;
-  grid-column: -6 / -1;
+  grid-row: 10 / 12;
+  grid-column: 3 / 9;
+  padding-bottom: 0;
+  padding-right: 0;
 
 }
 .item-link5-contact{
