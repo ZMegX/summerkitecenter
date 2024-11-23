@@ -874,6 +874,10 @@ footer{
   border-radius: 8px;
 
 }
+a{
+  text-decoration-line: underline;
+
+}
   nav {
     margin: 0;
   }
@@ -1041,9 +1045,15 @@ footer{
 
 }
 .h3-main{
+  display: flex;
+  grid-row: 10 / 11;
+  grid-column: 1 / 2;
   font-family: "short-films", sans-serif;
   font-weight: 700;
   font-style: normal;
+  justify-content: flex-end;
+  font-size: 2em;
+  margin-top: 4em;
 
 }
 .paragraph-box {
@@ -1057,8 +1067,8 @@ footer{
  }
 
 .element-main-accomodation-container{
-  grid-row: 11 / 12;
-  grid-column: -6 / -2;
+  grid-row: 10 / 13;
+  grid-column: -6 / -1;
 
 }
 .item-link5-contact{
@@ -1084,7 +1094,7 @@ footer{
 }
 footer{
   display: flex;
-  grid-row: 12 / 13;
+  grid-row: 13 / 14;
   grid-column: 1 / 9;
   flex-direction: column-reverse;
   align-items: center;
