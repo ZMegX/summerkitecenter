@@ -7,50 +7,376 @@
     <style>
 @media only screen and  (max-width: 481px) {
   body {
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
-}
+    width: 100%;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
 html, body {
-  overflow-x:hidden 
 }
-        a {
+html {
+  box-sizing: border-box;
+}
+a {
 text-decoration: none;
+font-family: "obviously", sans-serif;
+font-weight: 400;
+font-style: italic;
+color: #271719;
+
+}
+.main-1-wrapper{
+ grid-template-columns: 1fr;
+
 }
 header{
   display: flex;
+  justify-content: center;
   padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
   font-family: "marydale", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 0.5em;
-color: #44A6A6;
-}
-.element-img1-container{
-    display: grid;
-}
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: #44A6A6;
 
 }
-  .element-img1-container{
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+nav {
+  margin: 0;
+
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #C683C3;
+
+}
+nav li {
+  margin: 0;
+  list-style: none;
+  font-family: "canvas-inline", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+
+}
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+
+}
+nav a:link {
+  display: flex;
+  font-family: "grecian-light-face", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75em;
+  gap: 1rem;
+  color: black;
+  
+}
+#Accomodation-link{
+  font-style: italic;
+}
+nav a:visited {
+  color: #F2CF8D;
+}
+nav a:hover {
+  color: #e8c42a;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #A62317;
+  transition: 0.3s;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1em;
+  color: #44A6A6;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #44A6A6;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+
+  }
+p {
+  font-family: "obviously-narrow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+
+}
+.h2{
+  display: flex;
+  justify-content: center ;
+
+}
+}
+@media only screen and (min-width: 465px) {
+  body {
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+  }
+  .main-1-wrapper{
     display: grid;
-  grid-row: ;
-  grid-column: ;
-  padding: 10px;
+    grid-template-columns: 300px repeat(5, 100px);
+    grid-template-rows: 200px 200px 350px auto;
+    padding: 10px;
+}
+header{
+    padding-top: 0.5rem;
+    font-family: "marydale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 7;
+    color: #44A6A6;
+  }
+  img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #44A6A6;
+  }
+  nav li {
+    margin: 0;
+    list-style: none;
+    font-family: "grecian-light-face", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    background-color: #44A6A6;
+  
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  nav a:link {
+    display: flex;
+    gap: 1rem;
+    color: black;
+    font-size: 0.80em;
+  }
+  nav a:visited {
+    color: #C683C3;
+  }
+  nav a:hover {
+    color: #C683C3;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #271719;
+    transition: 0.3s;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  a {
+    text-decoration: none;
+    font-family: "obviously", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #271719;
+    
+    }
+
 }
     </style>
 </head>
 <body>
-    <aside>
-        <h4>We strive to create 
-          the perfect kitesurf trip—send us a message, 
-          and let’s make it happen!</h4>
-      </aside>
-      <div class="element-img1-container">
-        <div class="element-img1">
-        <picture>
-          <source media="(min-width:650px)" srcset="./imagesupd/photo-contact-650.jpg">
-          <source media="(min-width:465px)" srcset="./imagesupd/photo-contact-465.jpg">
-          <img src="./imagesupd/photo-contact-650.jpg" alt="Front photo of the kite shcool, with yellow flags, on the beach" style="width:auto;">
-        </picture>
+  <header>
+    <h1>Summer Kite Center School</h1>
+  </header>
+      <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="./main.html">Home</a></li>
+            <li><a href="./book.html">Book</a></li>
+            <li><a href="./Kiteschool.html">Kiteschool</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <script>
+          function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+          }
+        </script>
+      </div>
+        <h2>Offer 1: Beginner Kitesurfing Lessons
+        </h2>
+        <table border="1">
+          <tr>
+            <th>Option 1: Group Lessons + Equipment Rental</th>
+            <th>Option 2: Personal Lessons</th>
+          </tr>
+          <tr>
+            <td>Learn with fellow beginners 
+              under the guidance of our expert
+               instructors. Includes all necessary
+                equipment (kite, board, harness).	
+            </td>
+            <td>Personalized coaching to help you progress
+               at your own pace. All necessary equipment
+                (kite, board, harness) is provided.
+            </td>
+          </tr>
+          <tr>
+            <td>Price:<br> 3 hrs - €150<br>
+              7 hrs - €320<br>
+              12 hrs - €550</td>
+            <td>Price:<br> 3 hrs - €260<br>
+              7 hrs - €580<br>
+              12 hrs - €790</td>
+          </tr>
+        </table>
+        <h2>Offer 2: Intermediate Kitesurfing Lessons</h2>
+        <p>Take your kitesurfing skills to the
+           next level! Our intermediate lessons focus
+            on refining techniques, improving control,
+             and building confidence in more dynamic 
+             conditions.</p>
+        <table border="1">
+          <tr>
+            <th>Option 1: Group Lessons + Equipment Rental</th>
+            <th>Option 2: Personal Lessons</th>
+          </tr>
+          <tr>
+            <td>Ideal for those looking to 
+              advance their skills while enjoying
+               the energy of a group setting.
+                Equipment included. </td>
+            <td>One-on-one coaching for targeted
+               improvement, tailored to your goals. 
+               Equipment provided.</td>
+          </tr>
+          <tr>
+            <td>Price: [Enter Price]	</td>
+            <td>Price: [Enter Price]	</td>
+          </tr>
+        </table>
+        <h2>Offer 3: Advanced Kitesurfing Lessons </h2>
+        <p>Master advanced tricks and techniques,
+           learn to navigate challenging conditions,
+            and elevate your kitesurfing game to
+             professional levels with our advanced lessons. </p>
+        <table border="1">
+          <tr>
+            <th>Option 1: Group Lessons + Equipment Rental</th>
+            <th>Option 2: Personal Lessons</th>
+          </tr>
+          <tr>
+            <td>Perfect for experienced kitesurfers 
+              who thrive in a group learning environment.
+               Includes all equipment.	</td>
+            <td>Focused, personalized coaching to 
+              master advanced maneuvers and push your 
+              limits. Equipment included.</td>
+          </tr>
+          <tr>
+            <td>Price: [Enter Price]	</td>
+            <td>Price: [Enter Price]	</td>
+          </tr>
+        </table>
+        <table border="1">
+          <tr>
+            <th>Offer 4: Introduction to Kitesurfing - 10-Day Package
+            </th>
+          </tr>
+          <tr>
+            <td>Dive into an unforgettable kitesurfing
+               adventure! This 10-day package is designed
+                for beginners and includes group lessons,
+                 equipment rental, and cozy accommodation by
+                  the beach.
+
+            </td>
+          </tr>
+          <tr>
+            <td>What’s Included:
+
+              Daily group lessons with expert instructors
+              Full equipment rental (kite, board, harness)
+              Accommodation near the kitesurfing spot
+              A supportive and fun learning environment
+              </td>
+          </tr>
+          <tr>
+            <td>Package Price: [Enter Price]</td>
+          </tr>
+        </table>
 </body>
 </html>
