@@ -58,7 +58,7 @@ nav li {
   font-weight: 200;
   font-style: normal;
   display: flex;
-
+  
 }
 nav a {
   text-decoration: none;
@@ -74,9 +74,6 @@ nav a:link {
   gap: 1rem;
   color: black;
   
-}
-#Accomodation-link{
-  font-style: italic;
 }
 nav a:visited {
   color: #F5CE1A;
@@ -850,7 +847,7 @@ footer{
 @media (min-width: 1024px){
   .main-1-wrapper {
     display: grid;
-    grid-template-rows: 180px 50px 450px repeat(2, auto);
+    grid-template-rows: 180px 50px 50px repeat(2, auto);
     padding: 10px;
     grid-template-columns: 465px repeat(6, 128px);
     width: 100%;
