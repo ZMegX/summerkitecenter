@@ -7,15 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Kite Center School</title>
     <style>
-        body {
+      @media only screen and  (max-width: 481px) {
+
+  body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
 }
+.day-book-html{
+  text-decoration: none;
+}
 
-h1 {
+.wrapper-book-html{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+
+}
+.booking-form{
+  display: flex;
+
+}
+
+.h1-book-html {
   margin-top: 20px;
 }
 
@@ -53,107 +69,334 @@ h1 {
 }
 
 .day:hover {
-  background-color: #80deea;
+  background-color: #A62317;
+}
+
+      }
+@media only screen and (min-width: 465px) {
+
+.wrapper-book-html{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+
+}
+.calendar-container-book-html {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2em;
+
+}
+.container-booking-form-container-book-html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+
+}
+.month{
+  display: flex;
+
+}
+.container-booking-form-container-book-html{
+  display: flex;
+
+}
+.booking-form{
+  display: flex;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.month {
+  grid-column: span 7;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.day-label, .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.day-label {
+  background-color: #f0f0f0;
+}
+
+.day {
+  background-color: #e0f7fa;
+  text-decoration: none;
+  color: black;
+}
+
+.day:hover {
+  background-color: #A62317;
+}
+
+
+}
+@media (min-width: 768px) {
+  .wrapper-book-html{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+
+}
+.calendar-container-book-html {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2em;
+  padding-top: 0px;
+
+}
+.container-booking-form-container-book-html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  padding-top: 0px;
+
+}
+.month{
+  display: flex;
+
+}
+.container-booking-form-container-book-html{
+  display: flex;
+
+}
+.booking-form{
+  display: flex;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.month {
+  grid-column: span 7;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.day-label, .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.day-label {
+  background-color: #f0f0f0;
+}
+
+.day {
+  background-color: #e0f7fa;
+  text-decoration: none;
+  color: black;
+}
+
+.day:hover {
+  background-color: #A62317;
+}
+
+
+}
+
+
+@media (min-width: 1024px){
+  .wrapper-book-html{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+
+}
+.calendar-container-book-html {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10em;
+  padding-right: 5em;
+  padding-top: 0px;
+
+}
+.container-booking-form-container-book-html {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10em;
+  padding-top: 0px;
+
+}
+.month{
+  display: flex;
+
+}
+.container-booking-form-container-book-html{
+  display: flex;
+
+}
+.booking-form{
+  display: flex;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.month {
+  grid-column: span 7;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.day-label, .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.day-label {
+  background-color: #f0f0f0;
+}
+
+.day {
+  background-color: #e0f7fa;
+  text-decoration: none;
+  color: black;
+}
+
+.day:hover {
+  background-color: #A62317;
+}
+
 }
     </style>
 </head>
-<body>
-  <header>
-    <h1>Summer Kite School Centre</h1>
-</header>
-<div class="navbar">
-    <div class="menu-icon" onclick="toggleMenu()">
-        <!-- Hamburger icon bars -->
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <nav>
-        <ul class="nav-links">
-          <li><a href="./main.html">Home</a></li>
-          <li><a href="./book.html">Book</a></li>
-          <li><a href="./kiteschool.html">Kiteschool</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
-    </script>
-    </div>
-    <div class="calendar-book-html"></div>
-    <h1>Request to Book</h1>
-  
-  <div class="booking-form">
-    <form action="submit_booking.html" method="get">
-      <label for="date">Selected Date:</label>
-      <input type="text" id="date" name="date" value="" readonly>
+  <body>
+      <div class="wrapper-book-html">
+                    <header>
+                      <h1>Summer Kite School Centre</h1>
+                  </header>
+                  <div class="navbar">
+                      <div class="menu-icon" onclick="toggleMenu()">
+                          <!-- Hamburger icon bars -->
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                      </div>
+                      <nav>
+                          <ul class="nav-links">
+                            <li><a href="./main.html">Home</a></li>
+                            <li><a href="./kiteschool.html">Kiteschool</a></li>
+                            <li><a href="./book.html">Book</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                          </ul>
+                      </nav>
+                      <script>
+                          function toggleMenu() {
+                              document.querySelector('.nav-links').classList.toggle('active');
+                          }
+                      </script>
+                      </div>
+                      
+                      <div class="container-booking-form-container-book-html">
+                          <h1>Request to Book</h1>
+                    
+                            <div class="booking-form">
+                              <form action="submit_booking.html" method="get">
+                                <label for="date">Selected Date:</label>
+                                <input type="text" id="date" name="date" value="" readonly>
 
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
 
-      <button type="submit">Request Booking</button>
-    </form>
-  </div>
+                                <button type="submit">Request Booking</button>
+                              </form>
+                            </div>
+                      </div>
 
-  <script>
-    // Populate the date input with the value from the URL
-    const urlParams = new URLSearchParams(window.location.search);
-    document.getElementById('date').value = urlParams.get('date');
-  </script>
-  <h1>Booking Calendar</h1>
-  <div class="calendar">
-    <div class="month">
-      <span>November 2023</span>
-    </div>
-    <div class="day-label-book-html">Sun</div>
-      <div class="day-label-book-html">Mon</div>
-      <div class="day-label-book-html">Tue</div>
-      <div class="day-label-book-html">Wed</div>
-      <div class="day-label-book-html">Thu</div>
-      <div class="day-label-book-html">Fri</div>
-      <div class="day-label-book-html">Sat</div>
+                    <script>
+                      // Populate the date input with the value from the URL
+                      const urlParams = new URLSearchParams(window.location.search);
+                      document.getElementById('date').value = urlParams.get('date');
+                    </script>
+                    <div class="calendar-container-book-html">
+                          <h1 class="h1-book-html">Booking Calendar</h1>
+                          <div class="calendar">
+                                <div class="month">
+                                  <span>November 2023</span>
+                                </div>
+                                <div class="day-label-book-html">Sun</div>
+                                <div class="day-label-book-html">Mon</div>
+                                <div class="day-label-book-html">Tue</div>
+                                <div class="day-label-book-html">Wed</div>
+                                <div class="day-label-book-html">Thu</div>
+                                <div class="day-label-book-html">Fri</div>
+                                <div class="day-label-book-html">Sat</div>
 
-      <a href="form.html?date=null" class="day-book-html"></a>
-      <a href="form.html?date=null" class="day-book-html"></a>
-      <a href="form.html?date=null" class="day-book-html"></a>
-      <a href="form.html?date=null" class="day-book-html"></a>
-      <a href="form.html?date=null" class="day-book-html"></a>
-      <a href="form.html?date=2023-11-01" class="day-book-html">1</a>
-      <a href="form.html?date=2023-11-02" class="day-book-html">2</a>
-      <a href="form.html?date=2023-11-03" class="day-book-html">3</a>
-      <a href="form.html?date=2023-11-04" class="day-book-html">4</a>
-      <a href="form.html?date=2023-11-05" class="day-book-html">5</a>
-      <a href="form.html?date=2023-11-06" class="day-book-html">6</a>
-      <a href="form.html?date=2023-11-07" class="day-book-html">7</a>
-      <a href="form.html?date=2023-11-08" class="day-book-html">8</a>
-      <a href="form.html?date=2023-11-09" class="day-book-html">9</a>
-      <a href="form.html?date=2023-11-10" class="day-book-html">10</a>
-      <a href="form.html?date=2023-11-11" class="day-book-html">11</a>
-      <a href="form.html?date=2023-11-12" class="day-book-html">12</a>
-      <a href="form.html?date=2023-11-13" class="day-book-html">13</a>
-      <a href="form.html?date=2023-11-14" class="day-book-html">14</a>
-      <a href="form.html?date=2023-11-15" class="day-book-html">15</a>
-      <a href="form.html?date=2023-11-16" class="day-book-html">16</a>
-      <a href="form.html?date=2023-11-17" class="day-book-html">17</a>
-      <a href="form.html?date=2023-11-18" class="day-book-html">18</a>
-      <a href="form.html?date=2023-11-19" class="day-book-html">19</a>
-      <a href="form.html?date=2023-11-20" class="day-book-html">20</a>
-      <a href="form.html?date=2023-11-21" class="day-book-html">21</a>
-      <a href="form.html?date=2023-11-22" class="day-book-html">22</a>
-      <a href="form.html?date=2023-11-23" class="day-book-html">23</a>
-      <a href="form.html?date=2023-11-24" class="day-book-html">24</a>
-      <a href="form.html?date=2023-11-25" class="day-book-html">25</a>
-      <a href="form.html?date=2023-11-26" class="day-book-html">26</a>
-      <a href="form.html?date=2023-11-27" class="day-book-html">27</a>
-      <a href="form.html?date=2023-11-28" class="day-book-html">28</a>
-      <a href="form.html?date=2023-11-29" class="day-book-html">29</a>
-      <a href="form.html?date=2023-11-30" class="day-book-html">30</a>
-   
-  </div>
-</body>
+                                <a href="form.html?date=null" class="day-book-html"></a>
+                                <a href="form.html?date=null" class="day-book-html"></a>
+                                <a href="form.html?date=null" class="day-book-html"></a>
+                                <a href="form.html?date=null" class="day-book-html"></a>
+                                <a href="form.html?date=null" class="day-book-html"></a>
+                                <a href="form.html?date=2023-11-01" class="day-book-html">1</a>
+                                <a href="form.html?date=2023-11-02" class="day-book-html">2</a>
+                                <a href="form.html?date=2023-11-03" class="day-book-html">3</a>
+                                <a href="form.html?date=2023-11-04" class="day-book-html">4</a>
+                                <a href="form.html?date=2023-11-05" class="day-book-html">5</a>
+                                <a href="form.html?date=2023-11-06" class="day-book-html">6</a>
+                                <a href="form.html?date=2023-11-07" class="day-book-html">7</a>
+                                <a href="form.html?date=2023-11-08" class="day-book-html">8</a>
+                                <a href="form.html?date=2023-11-09" class="day-book-html">9</a>
+                                <a href="form.html?date=2023-11-10" class="day-book-html">10</a>
+                                <a href="form.html?date=2023-11-11" class="day-book-html">11</a>
+                                <a href="form.html?date=2023-11-12" class="day-book-html">12</a>
+                                <a href="form.html?date=2023-11-13" class="day-book-html">13</a>
+                                <a href="form.html?date=2023-11-14" class="day-book-html">14</a>
+                                <a href="form.html?date=2023-11-15" class="day-book-html">15</a>
+                                <a href="form.html?date=2023-11-16" class="day-book-html">16</a>
+                                <a href="form.html?date=2023-11-17" class="day-book-html">17</a>
+                                <a href="form.html?date=2023-11-18" class="day-book-html">18</a>
+                                <a href="form.html?date=2023-11-19" class="day-book-html">19</a>
+                                <a href="form.html?date=2023-11-20" class="day-book-html">20</a>
+                                <a href="form.html?date=2023-11-21" class="day-book-html">21</a>
+                                <a href="form.html?date=2023-11-22" class="day-book-html">22</a>
+                                <a href="form.html?date=2023-11-23" class="day-book-html">23</a>
+                                <a href="form.html?date=2023-11-24" class="day-book-html">24</a>
+                                <a href="form.html?date=2023-11-25" class="day-book-html">25</a>
+                                <a href="form.html?date=2023-11-26" class="day-book-html">26</a>
+                                <a href="form.html?date=2023-11-27" class="day-book-html">27</a>
+                                <a href="form.html?date=2023-11-28" class="day-book-html">28</a>
+                                <a href="form.html?date=2023-11-29" class="day-book-html">29</a>
+                              <a href="form.html?date=2023-11-30" class="day-book-html">30</a>
+                            </div>
+                      </div>
+            </div>
+   </body>
 </html>
