@@ -79,10 +79,10 @@ nav a:link {
   font-style: italic;
 }
 nav a:visited {
-  color: #F2CF8D;
+  color: #F5CE1A;
 }
 nav a:hover {
-  color: #e8c42a;
+  color: #F5CE1A;
 }
 .nav-links {
   display: flex;
@@ -334,10 +334,10 @@ p {
     font-size: 0.80em;
   }
   nav a:visited {
-    color: #C683C3;
+    color: #F5CE1A;
   }
   nav a:hover {
-    color: #C683C3;
+    color: #F5CE1A;
   }
   .nav-links {
     display: flex;
@@ -643,10 +643,10 @@ footer{
     font-size: 0.80em;
   }
   nav a:visited {
-    color: #C683C3;
+    color: #F5CE1A;
   }
   nav a:hover {
-    color: #C683C3;
+    color: #F5CE1A;
   }
   .nav-links {
     display: flex;
