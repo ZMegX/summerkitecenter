@@ -12,9 +12,15 @@ html {
 }
 a {
 text-decoration: none;
+font-family: "obviously", sans-serif;
+font-weight: 400;
+font-style: italic;
+color: #271719;
+
 }
 .main-1-wrapper{
  grid-template-columns: 1fr;
+
 }
 header{
   display: flex;
@@ -25,14 +31,17 @@ header{
   font-style: normal;
   font-size: 1em;
   color: #44A6A6;
+
 }
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+
 }
 nav {
   margin: 0;
+
 }
 nav ul {
   margin: 0;
@@ -40,6 +49,7 @@ nav ul {
   align-items: center;
   justify-content: space-around;
   background-color: #C683C3;
+
 }
 nav li {
   margin: 0;
@@ -48,10 +58,12 @@ nav li {
   font-weight: 200;
   font-style: normal;
   display: flex;
+
 }
 nav a {
   text-decoration: none;
   font-size: 1rem;
+
 }
 nav a:link {
   display: flex;
@@ -61,6 +73,7 @@ nav a:link {
   font-size: 0.75em;
   gap: 1rem;
   color: black;
+  
 }
 #Accomodation-link{
   font-style: italic;
@@ -125,14 +138,11 @@ nav a:hover {
     height: 100vh;
   }
 p {
-  font-family: "new-zen", sans-serif;
-  font-weight: 300;
+  font-family: "obviously-narrow", sans-serif;
+  font-weight: 200;
   font-style: normal;
-}
-.content {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
+  font-size: 1em;
+
 }
 .element-item-imgkiteschool-container{
   display: flex;
@@ -145,24 +155,19 @@ p {
 }
 .paragraph-box {
   background-color: rgba(255, 255, 255, 0.9);
-  /* border: 2px solid #ddd; */
+  border: 2px solid #ddd;
   border-radius: 8px;
-  /* padding: 15px; */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  padding: 15px;
+  box-shadow: 0 4px 8px #44A6A6;
 }
 .paragraph-main-accomodation{
   background-color: rgba(255, 255, 255, 0.9);
   border: 2px solid #ddd;
   border-radius: 8px;
   padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px #44A6A6;
 }
-.kiteschool-presentation-main-test {
-  font-size: 1.1em;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-}
+
 /* Styling for the paragraph box */
 
 .elementor-widget-container-main-1 {
@@ -250,6 +255,7 @@ justify-content: center;
 }
 footer{
   display: flex;
+  justify-items: center ;
 }
 
 }
@@ -855,7 +861,7 @@ p {
 
 .element-item-link1-container{
   display: flex;
-  grid-row: 6;
+  grid-row: 6 / 7;
   justify-content: space-evenly;
   grid-column: 1 / 7;
 
@@ -872,12 +878,20 @@ p {
 }
 h2 {
   grid-row: 7 / 8;
-  grid-column: 3 / 6;
+  grid-column: 2 / 4;
 
+}
+.paragraph-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  grid-row: 7 / 8;
+  grid-column: 3 / 7;
+ 
 }
 .item-link2-kitesurf-lessons{
   display: flex;
-
+  justify-content: flex-start;
+  
 }
 
 .element-item-link-4-5-container{
@@ -893,13 +907,7 @@ h2{
   grid-row: 10 / 11;
 }
 }
-.paragraph-box {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  grid-row: 11 / 12;
-  grid-column: 1 / 2;
- 
-}
+
 /* Styling for the paragraph box */
 
 
