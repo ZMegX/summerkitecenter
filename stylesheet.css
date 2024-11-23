@@ -1071,6 +1071,9 @@ footer{
   grid-row: 9 / 10;
   grid-column: 3 / 6;
   align-items: flex-start;
+  margin-top: 1.4rem;
+  
+}
 
 }
 .paragraph-box2{
