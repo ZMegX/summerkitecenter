@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.typekit.net/yty2ajt.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiteschool</title>
     <style>
@@ -18,26 +19,27 @@ html {
   box-sizing: border-box;
 }
 a {
-text-decoration: none;
+text-decoration-line: underline;
 font-family: "obviously", sans-serif;
 font-weight: 400;
 font-style: italic;
 color: #271719;
 
 }
-.main-1-wrapper{
- grid-template-columns: 1fr;
-
+.wrapper-hiteschool-html{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr ;
 }
 header{
   display: flex;
   justify-content: center;
   padding-top: 0.5rem;      /* Add top padding to avoid overlap with navbar */
-  font-family: "marydale", sans-serif;
-  font-weight: 400;
+  font-family: "short-films", sans-serif;
+  font-weight: 800;
   font-style: normal;
+  color: #A62317;
   font-size: 1em;
-  color: #44A6A6;
 
 }
 img {
@@ -55,7 +57,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #C683C3;
+  background-color: #C9EBF2;
 
 }
 nav li {
@@ -65,7 +67,7 @@ nav li {
   font-weight: 200;
   font-style: normal;
   display: flex;
-
+  
 }
 nav a {
   text-decoration: none;
@@ -82,14 +84,11 @@ nav a:link {
   color: black;
   
 }
-#Accomodation-link{
-  font-style: italic;
-}
 nav a:visited {
-  color: #F2CF8D;
+  color: #F5CE1A;
 }
 nav a:hover {
-  color: #e8c42a;
+  color: #F5CE1A;
 }
 .nav-links {
   display: flex;
@@ -124,7 +123,7 @@ nav a:hover {
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #44A6A6;
+    background-color: #C9EBF2;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
@@ -138,121 +137,18 @@ nav a:hover {
     display: flex;
 
   }
-p {
+td {
   font-family: "obviously-narrow", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 1em;
 
 }
-.h2{
-  display: flex;
-  justify-content: center ;
-
-}
-}
-@media only screen and (min-width: 465px) {
-  body {
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-  }
-  .main-1-wrapper{
-    display: grid;
-    grid-template-columns: 300px repeat(5, 100px);
-    grid-template-rows: 200px 200px 350px auto;
-    padding: 10px;
-}
-header{
-    padding-top: 0.5rem;
-    font-family: "marydale", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.75rem;
-    grid-row: 1 / 2;
-    grid-column: 1 / 7;
-    color: #44A6A6;
-  }
-  img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-
-}
-  nav {
-    margin: 0;
-  }
-  nav ul {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #44A6A6;
-  }
-  nav li {
-    margin: 0;
-    list-style: none;
-    font-family: "grecian-light-face", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    background-color: #44A6A6;
-  
-  }
-  nav a {
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  nav a:link {
-    display: flex;
-    gap: 1rem;
-    color: black;
-    font-size: 0.80em;
-  }
-  nav a:visited {
-    color: #C683C3;
-  }
-  nav a:hover {
-    color: #C683C3;
-  }
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-  }
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 4px;
-  }
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #271719;
-    transition: 0.3s;
-  }
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1000;
-  }
-  a {
-    text-decoration: none;
-    font-family: "obviously", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    color: #271719;
-    
-    }
-
 }
     </style>
 </head>
 <body>
+  <div class="wrapper-hiteschool-html">
   <header>
     <h1>Summer Kite School Centre</h1>
   </header>
@@ -276,7 +172,7 @@ header{
           }
         </script>
       </div>
-        <h2>Offer 1: Beginner Kitesurfing Lessons
+      <h2 class="h2-kiteschool-html">Offer 1: Beginner Kitesurfing Lessons
         </h2>
         <table border="1">
           <tr>
@@ -286,12 +182,12 @@ header{
           <tr>
             <td>Learn with fellow beginners 
               under the guidance of our expert
-               instructors. Includes all necessary
+               instructors. <br>Includes all necessary
                 equipment (kite, board, harness).	
             </td>
             <td>Personalized coaching to help you progress
                at your own pace. All necessary equipment
-                (kite, board, harness) is provided.
+              is provided (kite, board, harness).
             </td>
           </tr>
           <tr>
@@ -303,7 +199,7 @@ header{
               12 hrs - €790</td>
           </tr>
         </table>
-        <h2>Offer 2: Intermediate Kitesurfing Lessons</h2>
+        <h2 class="h2-kiteschool-html">Offer 2: Intermediate Kitesurfing Lessons</h2>
         <p>Take your kitesurfing skills to the
            next level! Our intermediate lessons focus
             on refining techniques, improving control,
@@ -328,7 +224,7 @@ header{
             <td>Price: [Enter Price]	</td>
           </tr>
         </table>
-        <h2>Offer 3: Advanced Kitesurfing Lessons </h2>
+        <h2 class="h2-kiteschool-html">Offer 3: Advanced Kitesurfing Lessons </h2>
         <p>Master advanced tricks and techniques,
            learn to navigate challenging conditions,
             and elevate your kitesurfing game to
@@ -378,5 +274,6 @@ header{
             <td>Package Price: [Enter Price]</td>
           </tr>
         </table>
+    </div>
 </body>
 </html>
