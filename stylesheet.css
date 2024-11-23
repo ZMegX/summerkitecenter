@@ -1301,6 +1301,13 @@ footer{
       width: 100%;
       height: 100vw;}
 
+.header-contact-html{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  grid-column: 1 / 9;
+
+}
 
 .element-img2-container-contact-html{
 display: flex;
