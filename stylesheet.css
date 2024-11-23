@@ -1022,7 +1022,7 @@ footer{
   display: flex;
   grid-row: 6 / 7;
   justify-content: space-evenly;
-  grid-column: 1 / 7;
+  grid-column: 1 / 9;
 
 }
 .element-img1-container{
@@ -1039,8 +1039,8 @@ footer{
   font-family: "short-films", sans-serif;
   font-weight: 700;
   font-style: normal;
-  grid-row: 10 / 11;
-  grid-column: 2 / 4;
+  grid-row: 7 / 8;
+  grid-column: 3 / 9;
 
 }
 .h3-main{
@@ -1055,7 +1055,7 @@ footer{
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   grid-row: 8 / 9;
-  grid-column: 3 / 7;
+  grid-column: 3 / 9;
    
  }
 
@@ -1069,13 +1069,12 @@ footer{
   justify-content: flex-start;
   padding: 20px;
   grid-row: 9 / 10;
-  grid-column: 3 / 6;
+  grid-column: 3 / 9;
   align-items: flex-start;
   margin-top: 1.4rem;
   
 }
 
-}
 .paragraph-box2{
   display: flex;
   flex-direction: row;
@@ -1089,7 +1088,7 @@ footer{
 footer{
   display: flex;
   grid-row: 12 / 13;
-  grid-column: 1 / 8;
+  grid-column: 1 / 9;
   flex-direction: column-reverse;
   align-items: center;
 
