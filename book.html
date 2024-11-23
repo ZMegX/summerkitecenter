@@ -6,6 +6,56 @@
     <link rel="stylesheet" href="https://use.typekit.net/yty2ajt.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Kite Center School</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.month {
+  grid-column: span 7;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.day-label, .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.day-label {
+  background-color: #f0f0f0;
+}
+
+.day {
+  background-color: #e0f7fa;
+  text-decoration: none;
+  color: black;
+}
+
+.day:hover {
+  background-color: #80deea;
+}
+    </style>
 </head>
 <body>
   <header>
@@ -32,6 +82,81 @@
             document.querySelector('.nav-links').classList.toggle('active');
         }
     </script>
-</div>
+    </div>
+    <div class="calendar-book-html"></div>
+    <h1>Request to Book</h1>
+  
+  <div class="booking-form">
+    <form action="submit_booking.html" method="get">
+      <label for="date">Selected Date:</label>
+      <input type="text" id="date" name="date" value="" readonly>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Request Booking</button>
+    </form>
+  </div>
+
+  <script>
+    // Populate the date input with the value from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById('date').value = urlParams.get('date');
+  </script>
+  <h1>Booking Calendar</h1>
+  
+  <div class="calendar">
+    <!-- Calendar Header -->
+    <div class="month">
+      <span>November 2023</span>
+    </div>
+    
+    <div class="day-label">Sun</div>
+    <div class="day-label">Mon</div>
+    <div class="day-label">Tue</div>
+    <div class="day-label">Wed</div>
+    <div class="day-label">Thu</div>
+    <div class="day-label">Fri</div>
+    <div class="day-label">Sat</div>
+    
+    <a href="form.html?date=null" class="day"></a>
+    <a href="form.html?date=null" class="day"></a>
+    <a href="form.html?date=null" class="day"></a>
+    <a href="form.html?date=null" class="day"></a>
+    <a href="form.html?date=null" class="day"></a>
+    <a href="form.html?date=2023-11-01" class="day">1</a>
+<a href="form.html?date=2023-11-02" class="day">2</a>
+<a href="form.html?date=2023-11-03" class="day">3</a>
+<a href="form.html?date=2023-11-04" class="day">4</a>
+<a href="form.html?date=2023-11-05" class="day">5</a>
+<a href="form.html?date=2023-11-06" class="day">6</a>
+<a href="form.html?date=2023-11-07" class="day">7</a>
+<a href="form.html?date=2023-11-08" class="day">8</a>
+<a href="form.html?date=2023-11-09" class="day">9</a>
+<a href="form.html?date=2023-11-10" class="day">10</a>
+<a href="form.html?date=2023-11-11" class="day">11</a>
+<a href="form.html?date=2023-11-12" class="day">12</a>
+<a href="form.html?date=2023-11-13" class="day">13</a>
+<a href="form.html?date=2023-11-14" class="day">14</a>
+<a href="form.html?date=2023-11-15" class="day">15</a>
+<a href="form.html?date=2023-11-16" class="day">16</a>
+<a href="form.html?date=2023-11-17" class="day">17</a>
+<a href="form.html?date=2023-11-18" class="day">18</a>
+<a href="form.html?date=2023-11-19" class="day">19</a>
+<a href="form.html?date=2023-11-20" class="day">20</a>
+<a href="form.html?date=2023-11-21" class="day">21</a>
+<a href="form.html?date=2023-11-22" class="day">22</a>
+<a href="form.html?date=2023-11-23" class="day">23</a>
+<a href="form.html?date=2023-11-24" class="day">24</a>
+<a href="form.html?date=2023-11-25" class="day">25</a>
+<a href="form.html?date=2023-11-26" class="day">26</a>
+<a href="form.html?date=2023-11-27" class="day">27</a>
+<a href="form.html?date=2023-11-28" class="day">28</a>
+<a href="form.html?date=2023-11-29" class="day">29</a>
+<a href="form.html?date=2023-11-30" class="day">30</a>    
+  </div>
 </body>
 </html>
